@@ -1,5 +1,6 @@
 <script setup>
 import { onMounted } from 'vue'
+import Footer from './components/layout/Footer.vue'
 
 // این کتابخانه‌ها (jQuery, Bootstrap, Swiper, Lity, Fancybox, WOW, scrollIt)
 // در index.html به صورت global script لود شده‌اند (window.$ / window.jQuery و ...)
@@ -184,37 +185,36 @@ onMounted(() => {
     <section class="clients style-4">
       <div class="container">
         <div class="text-center">
-          <h5 class="fw-bold mb-60">شرکت هایی که افتخار همکاری داشتیم</h5>
+          <h5 class="fw-bold mb-60">شرکت‌هایی که افتخار همکاری داشتیم</h5>
         </div>
 
         <div class="client-logos pb-70">
-          <div class="d-flex justify-content-around">
-            <div class="col-6 col-lg-2">
+          <div class="clients-scroll">
+            <div class="client-item">
               <a href="#" class="img d-block">
                 <img src="/assets/img/icons/abmantaghei.png" alt="" />
               </a>
-
               <p class="client-name">آب منطقه‌ای خراسان رضوی</p>
             </div>
-            <div class="col-6 col-lg-2">
+
+            <div class="client-item">
               <a href="#" class="img d-block">
                 <img src="/assets/img/icons/abmantaghei.png" alt="" />
               </a>
-
               <p class="client-name">آب منطقه‌ای خراسان شمالی</p>
             </div>
-            <div class="col-6 col-lg-2">
+
+            <div class="client-item">
               <a href="#" class="img d-block">
                 <img src="/assets/img/icons/abmantaghei.png" alt="" />
               </a>
-
               <p class="client-name">آب منطقه‌ای اصفهان</p>
             </div>
-            <div class="col-6 col-lg-2">
+
+            <div class="client-item">
               <a href="#" class="img d-block">
                 <img src="/assets/img/icons/abmantaghei.png" alt="" />
               </a>
-
               <p class="client-name">مدیریت منابع آب ایران</p>
             </div>
           </div>
@@ -468,43 +468,78 @@ onMounted(() => {
           <div class="row align-items-center justify-content-between">
             <div class="col-lg-6">
               <div class="img mb-30 mb-lg-0">
-                <img src="/assets/img/about/about_s4_img3.png" alt="" />
+                <img src="/assets/img/dashbord.png" alt="" />
               </div>
             </div>
             <div class="col-lg-5">
               <div class="info">
                 <div class="section-head style-4">
-                  <small class="title_small">ثيمات جميلة</small>
-                  <h2 class="mb-30">ركز أكثر مع <span>المظهر الداكن</span></h2>
+                  <!-- <small class="title_small">ثيمات جميلة</small> -->
+                  <h2 class="mb-30">داشبورد <span>کنترل، نظارت و تحلیل</span></h2>
                 </div>
                 <p class="text mb-40">
-                  قم بتطبيق سمات نوتيرو الأنيقة حسب ذوقك. تعمل السمات المظلمة بشكل ممتاز لأولئك
-                  الذين يفضلون الوضع الخالي من الإلهاء.
+                  شامل ابزارهایی برای کنترل و نظارت بر فرآیندهای داده‌برداری، منابع انسانی، صحت‌سنجی
+                  و مقایسه داده‌ها، تولید گزارشات تحلیلی و مدیریتی و ماژول‌های محاسبات سنگین است
                 </p>
-                <ul>
-                  <li class="d-flex align-items-center op-4">
-                    <i class="bi bi-dot fs-2 me-2 lh-1 color-blue4"></i>
-                    <h6 class="fw-bold">تصفية الملاحظات باستخدام الكلمات الرئيسية المتطابقة</h6>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <i class="bi bi-dot fs-2 me-2 lh-1 color-blue4"></i>
-                    <h6 class="fw-bold">8 موضوعات جميلة لتختارها</h6>
-                  </li>
-                  <li class="d-flex align-items-center op-4">
-                    <i class="bi bi-dot fs-2 me-2 lh-1 color-blue4"></i>
-                    <h6 class="fw-bold">وفر الطاقة لجهازك</h6>
-                  </li>
-                  <li class="d-flex align-items-center op-4">
-                    <i class="bi bi-dot fs-2 me-2 lh-1 color-blue4"></i>
-                    <h6 class="fw-bold">من السهل التبديل بين الوضع الفاتح والداكن</h6>
-                  </li>
-                </ul>
-                <a
+                <div class="features_block">
+                  <div class="d-flex flex-column gap-3">
+                    <div class="d-flex">
+                      <div class="d-flex feature-item" data-aos="fade-up" data-aos-duration="1500">
+                        <div class="image">
+                          <img src="/assets/img/pic/settings.png" alt="image" />
+                        </div>
+                        <div class="text">
+                          <h4>کنترل و نظارت</h4>
+                          <p>
+                            شامل ابزارهایی جهت کنترل و نظارت بر فرآیندهای داده‌برداری و منابع انسانی
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex">
+                      <div class="d-flex feature-item" data-aos="fade-up" data-aos-duration="1700">
+                        <div class="image">
+                          <img src="/assets/img/pic/infographics.png" alt="image" />
+                        </div>
+                        <div class="text">
+                          <h4>صحت‌سنجی و مقایسه</h4>
+                          <p>شامل ابزارهایی جهت صحت‌سنجی، مقایسه با داده‌های گذشته و منابع اطراف</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex">
+                      <div class="d-flex feature-item" data-aos="fade-up" data-aos-duration="1900">
+                        <div class="image">
+                          <img src="/assets/img/pic/monitor.png" alt="image" />
+                        </div>
+                        <div class="text">
+                          <h4>گزارشات تحلیلی و مدیریتی</h4>
+                          <p>تولید گزارشات کارشناسی، مدیریتی، تحلیلی و ترکیبی</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex">
+                      <div class="d-flex feature-item" data-aos="fade-up" data-aos-duration="1900">
+                        <div class="image">
+                          <img src="/assets/img/pic/intelligence.png" alt="image" />
+                        </div>
+                        <div class="text">
+                          <h4>ماژول محاسبات سنگین</h4>
+                          <p>ماژول محاسبات سنگین همچون هیدروگراف واحد آبخوان، کموگراف و ...</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <a
                   href="/page-services-5"
                   class="btn rounded-pill bg-blue4 fw-bold text-white mt-50"
                 >
                   <small>اكتشف الآن</small>
-                </a>
+                </a> -->
               </div>
             </div>
           </div>
@@ -550,7 +585,7 @@ onMounted(() => {
           <div class="swiper-wrapper">
             <div class="swiper-slide" v-for="n in 10" :key="n">
               <div class="img">
-                <img  :src="`/assets/img/screenshots/${n}.png`" alt="" />
+                <img :src="`/assets/img/screenshots/${n}.png`" alt="" />
               </div>
             </div>
           </div>
@@ -872,13 +907,11 @@ onMounted(() => {
                       data-bs-parent="#accordionSt4"
                     >
                       <div class="accordion-body">
-                        طراحی و توسعه سامانه یکپارچه مدیریت داده و منابع آب ایران (سیماب) یک سامانه
-                        اختصاصی برای شرکت‌های آب منطقه‌ای بوده که تمامی فرآیندهای داده‌برداری،
-                        کنترل، نظارت، گزارش‌گیری و تحلیل داده‌های منابع آب را شامل می‌شود. در حال
-                        حاضر این سامانه تمامی فرایندهای دفتر مطالعات پایه منابع آب را الکترونیکی
-                        نموده است و از سال 1399 در دفتر مطالعات پایه منابع آب شرکت آب منطقه‌ای
-                        خراسان رضوی راه‌اندازی شد و به عنوان سامانه اصلی این دفتر در حال کار است.
-                        این سامانه هم‌اکنون در دو استان خراسان رضوی و اصفهان فعال است.
+                        شرکت پایدار تجهیز آتی خراسان در زمینه طراحی و توسعه نرم‌افزارهای تخصصی،
+                        سامانه‌های مدیریت و تحلیل داده، هوشمندسازی فرآیندها و ارائه راهکارهای
+                        نرم‌افزاری فعالیت می‌کند. یکی از محصولات اصلی شرکت، سامانه یکپارچه مدیریت
+                        داده و منابع آب ایران (سیماب) است که با هدف الکترونیکی‌سازی، مدیریت، کنترل،
+                        گزارش‌گیری و تحلیل داده‌های منابع آب توسعه یافته است.
                       </div>
                     </div>
                   </div>
@@ -892,7 +925,7 @@ onMounted(() => {
                         aria-expanded="false"
                         aria-controls="collapse12"
                       >
-                        آیا محصولات ثبت اختراع یا گواهی استاندارد دارند؟
+                        سامانه سیماب چیست و چه کاربردی دارد؟
                       </button>
                     </h2>
                     <div
@@ -902,9 +935,10 @@ onMounted(() => {
                       data-bs-parent="#accordionSt4"
                     >
                       <div class="accordion-body">
-                        سامانه سیماب دارای تاییدیه براساس ارزیابی سافا (سامانه ارزیابی فناوری ایران)
-                        حائز بالاترین سطح آمادگی فناوری (TRL9) می‌باشد و همچنین دارای تاییدیه افتا
-                        از سازمان فناوری اطلاعات ایران میباشد.
+                        سامانه یکپارچه مدیریت داده و منابع آب ایران (سیماب)، یک سامانه تخصصی برای
+                        مدیریت فرآیندهای داده‌برداری، کنترل، نظارت، گزارش‌گیری و تحلیل داده‌های
+                        منابع آب است که فرآیندهای دفتر مطالعات پایه منابع آب را به‌صورت یکپارچه و
+                        الکترونیکی مدیریت می‌کند.
                       </div>
                     </div>
                   </div>
@@ -918,7 +952,7 @@ onMounted(() => {
                         aria-expanded="false"
                         aria-controls="collapse13"
                       >
-                        آیا نرم‌افزار نیاز به اینترنت دائمی دارد یا به صورت آفلاین هم کار می‌کند؟
+                        سامانه سیماب چیست و چه کاربردی دارد؟
                       </button>
                     </h2>
                     <div
@@ -928,9 +962,10 @@ onMounted(() => {
                       data-bs-parent="#accordionSt4"
                     >
                       <div class="accordion-body">
-                        بله امکان استفاده از سامانه به صورت آفلاین و آنلاین وجود دارد و به دلیل نیاز
-                        های سامانه برای استفاده های آفلاین قابلیت استفاده به هر دو صورت امکان پذیر
-                        است.
+                        سامانه یکپارچه مدیریت داده و منابع آب ایران (سیماب)، یک سامانه تخصصی برای
+                        مدیریت فرآیندهای داده‌برداری، کنترل، نظارت، گزارش‌گیری و تحلیل داده‌های
+                        منابع آب است که فرآیندهای دفتر مطالعات پایه منابع آب را به‌صورت یکپارچه و
+                        الکترونیکی مدیریت می‌کند.
                       </div>
                     </div>
                   </div>
@@ -944,7 +979,7 @@ onMounted(() => {
                         aria-expanded="true"
                         aria-controls="collapse4"
                       >
-                        آیا امکان گزارش‌گیری و خروجی گرفتن در قالب Excel/PDF وجود دارد؟
+                        سیماب در چه استان‌ها یا سازمان‌هایی فعال است؟
                       </button>
                     </h2>
                     <div
@@ -954,11 +989,9 @@ onMounted(() => {
                       data-bs-parent="#accordionSt4"
                     >
                       <div class="accordion-body">
-                        بله، سامانه این قابلیت را دارد که گزارش‌ها را به‌صورت چارت، جدول و همچنین در
-                        قالب فایل‌های Excel و CSV ارائه دهد. این امکان به کاربران کمک می‌کند تا
-                        داده‌ها را به‌صورت دقیق تحلیل کرده و در نرم‌افزارهای مختلف مورد استفاده قرار
-                        دهند. علاوه بر این، امکان شخصی‌سازی گزارش‌ها بر اساس نیازهای سازمان نیز
-                        فراهم شده است.
+                        سامانه سیماب از سال ۱۳۹۹ در دفتر مطالعات پایه منابع آب شرکت آب منطقه‌ای
+                        خراسان رضوی راه‌اندازی شده و در حال حاضر در استان‌های خراسان رضوی و اصفهان
+                        فعال است.
                       </div>
                     </div>
                   </div>
@@ -974,7 +1007,7 @@ onMounted(() => {
                         aria-expanded="true"
                         aria-controls="collapse5"
                       >
-                        كيف تقوم نيترو بتخزين بياناتي?
+                        آیا نرم‌افزار به اینترنت دائمی نیاز دارد؟
                       </button>
                     </h2>
                     <div
@@ -984,8 +1017,9 @@ onMounted(() => {
                       data-bs-parent="#accordionSt4"
                     >
                       <div class="accordion-body">
-                        من خلال التعاون مع العملاء في مناقشة الاحتياجات والطلب، نحن قادرون على تحقيق
-                        التفاهم المتبادل، واكتساب ثقة العملاء لتقديم المشورة المناسبة
+                        سامانه سیماب با توجه به نیازهای عملیاتی کاربران، امکان استفاده در حالت
+                        آنلاین و آفلاین را فراهم می‌کند. بنابراین برخی فرآیندها و اطلاعات موردنیاز
+                        کاربران در شرایط عدم دسترسی به اینترنت نیز قابل استفاده هستند.
                       </div>
                     </div>
                   </div>
@@ -1071,121 +1105,8 @@ onMounted(() => {
         </div>
       </div>
     </section>
-
-    <!-- ====== انجمن ====== -->
-    <section class="community section-padding pt-0 style-4">
-      <div class="container">
-        <div class="section-head text-center style-4">
-          <small class="title_small">مجتمع نوتيرو</small>
-          <h2 class="mb-30">انضم إلى <span>مركزنا</span></h2>
-        </div>
-        <div class="content">
-          <a href="#" class="commun-card">
-            <div class="icon"><i class="fab fa-github"></i></div>
-            <div class="inf">
-              <h5>جيت هوب</h5>
-              <p>المصدر المفتوح ورمز الاتصال</p>
-            </div>
-          </a>
-          <a href="#" class="commun-card">
-            <div class="icon"><i class="fab fa-twitter"></i></div>
-            <div class="inf">
-              <h5>تويتر</h5>
-              <p>آخر الأخبار والتحديثات</p>
-            </div>
-          </a>
-          <a href="#" class="commun-card">
-            <div class="icon"><i class="fab fa-telegram"></i></div>
-            <div class="inf">
-              <h5>تليجرام</h5>
-              <p>قناه للمجتمع</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
   </main>
-
-  <!-- ====== فوتر ====== -->
-  <footer class="style-4" data-scroll-index="8">
-    <div class="container">
-      <div class="section-head text-center style-4">
-        <h2 class="mb-10">جاهز <span>للتنزيل</span></h2>
-        <p>
-          اكتشف مساحاتك المفضلة الجديدة، من ساو باولو إلى سيول. قم بالتنزيل من App Store أو Google
-          Play.
-        </p>
-        <div class="d-flex align-items-center justify-content-center mt-50">
-          <a
-            href="https://www.apple.com/app-store/"
-            class="btn rounded-pill bg-blue4 fw-bold text-white me-4"
-            target="_blank"
-          >
-            <small><i class="fab fa-apple me-2 pe-2 border-end"></i> تنزيل من متجر التطبيقات</small>
-          </a>
-          <a
-            href="https://play.google.com/store/apps"
-            class="btn rounded-pill hover-blue4 fw-bold border-blue4"
-            target="_blank"
-          >
-            <small><i class="fab fa-google-play me-2 pe-2 border-end"></i> تنزيل من متجر ابل</small>
-          </a>
-        </div>
-      </div>
-      <div class="foot mt-80">
-        <div class="row align-items-center">
-          <div class="col-lg-2">
-            <div class="logo">
-              <img src="/assets/img/logo_lgr.png" alt="" />
-            </div>
-          </div>
-          <div class="col-lg-8">
-            <ul class="links">
-              <li><a href="/" class="active">الرئيسية</a></li>
-              <li><a href="/page-about-5">من نحن</a></li>
-              <li><a href="/page-product-5">المنتجات</a></li>
-              <li><a href="/page-portfolio-5">المشاريع</a></li>
-              <li><a href="/page-services-5">الخدمات</a></li>
-              <li><a href="/page-shop-5">المتجر</a></li>
-              <li><a href="/page-blog-5">الاخبار</a></li>
-              <li><a href="/page-contact-5">اتصل بنا</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-2">
-            <div class="dropdown">
-              <button
-                class="icon-25 dropdown-toggle p-0 border-0 bg-transparent rounded-circle img-cover"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img src="/assets/img/lang.png" alt="" class="me-2" />
-                <small>العربية</small>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">English</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="copywrite text-center">
-        <small class="small">
-          © 2023 حقوق التأليف والنشر
-          <a href="#" class="fw-bold text-decoration-underline">Iteck Co.</a>
-          كل الحقوق محفوظة. صمم بواسطة
-          <a
-            href="https://themeforest.net/user/themescamp"
-            class="fw-bold text-decoration-underline"
-            >ThemesCamp</a
-          >
-        </small>
-      </div>
-    </div>
-    <img src="/assets/img/footer/footer_4_wave.png" alt="" class="wave" />
-  </footer>
-
+  <Footer></Footer>
   <!-- ====== دکمه‌ی بازگشت به بالا ====== -->
   <a
     href="#"
@@ -1249,5 +1170,111 @@ onMounted(() => {
   margin: 0;
   line-height: 1.7;
   opacity: 0.7;
+}
+.features_block .feature-item {
+  gap: 12px;
+}
+
+.features_block .feature-item .image img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.features_block .feature-item .text h4 {
+  font-size: 15px;
+  margin: 0 0 5px;
+  line-height: 1.5;
+}
+
+.features_block .feature-item .text p {
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.features_block > div > .d-flex {
+  margin-bottom: 20px;
+}
+
+.features_block > div > .d-flex:last-child {
+  margin-bottom: 0;
+}
+.clients .clients-scroll {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.clients .client-item {
+  flex: 0 0 180px;
+  text-align: center;
+}
+
+.clients .client-item .img {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+}
+
+.clients .client-item img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.clients .client-name {
+  margin: 10px 0 0;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+  .clients .clients-scroll {
+    justify-content: flex-start;
+    gap: 15px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding: 5px 10px 15px;
+
+    /* اسکرول نرم */
+    scroll-behavior: smooth;
+
+    /* مخفی کردن scrollbar */
+    scrollbar-width: none;
+  }
+
+  .clients .clients-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .clients .client-item {
+    flex: 0 0 115px;
+  }
+
+  .clients .client-item .img {
+    height: 65px;
+  }
+
+  .clients .client-item img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .clients .client-name {
+    font-size: 11px;
+    line-height: 1.6;
+    margin-top: 7px;
+  }
+
+  .clients h5 {
+    font-size: 15px;
+    margin-bottom: 30px !important;
+  }
 }
 </style>

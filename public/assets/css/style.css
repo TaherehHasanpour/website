@@ -14417,7 +14417,7 @@ footer.style-3 .contact_globe {
 footer.style-4 {
   position: relative;
   background-color: #f0eff5;
-  margin-top: 200px;
+  /* margin-top: 200px; */
 }
 footer.style-4 .wave {
   position: absolute;
