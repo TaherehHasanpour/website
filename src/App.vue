@@ -716,157 +716,189 @@ onMounted(() => {
     <section class="pricing section-padding style-4 pb-50" data-scroll-index="6">
       <div class="container">
         <div class="section-head text-center style-4">
-          <small class="title_small">خطة الاسعار</small>
-          <h2 class="mb-30">ابدأ بـ <span>سعر مناسب</span></h2>
+          <!-- <small class="title_small">خطة الاسعار</small> -->
+          <h2 class="mb-30">تــاییدیه و افتخـــارات</h2>
         </div>
         <div class="content">
-          <div class="toggle_switch d-flex align-items-center justify-content-center mb-40">
-            <div class="form-check form-switch p-0">
-              <label class="form-check-label" for="flexSwitchCheckDefault"
-                ><small>تدفع شهريا</small></label
-              >
-              <input
-                class="form-check-input float-none bg-blue4"
-                type="checkbox"
-                id="flexSwitchCheckDefault"
-                checked
-              />
-              <label class="form-check-label" for="flexSwitchCheckDefault"
-                ><small>دفع سنوى</small></label
-              >
-            </div>
-          </div>
           <div class="row gx-0">
+            <!-- مجوزها و تاییدیه‌ها -->
             <div class="col-lg-6">
               <div class="price-card">
                 <div class="price-header pb-4">
                   <h6>
-                    <img src="/assets/img/icons/price_s4_1.png" alt="" class="icon" /> الخطة
-                    الأساسية
+                    <!-- <img src="/assets/img/icons/price_s4_1.png" alt="" class="icon" /> -->
+                    مجوزها و تأییدیه‌ها
                   </h6>
-                  <h2>مجانا <small>/ شهري</small></h2>
-                  <p>نسخة تجريبية مجانية لمدة 14 يومًا، يمكنك استخدام أكثر من 20 ميزة أساسية</p>
+
+                  <h2>اعتبار <small>و استاندارد</small></h2>
+
+                  <p>برخی از مهم‌ترین مجوزها و تأییدیه‌های سامانه سیماب</p>
                 </div>
+
                 <div class="price-body py-4">
                   <ul>
-                    <li class="d-flex align-items-center mb-3">
-                      <small
-                        class="icon-30 bg-blue4 rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0"
-                      >
-                        <i class="far fa-sticky-note"></i>
-                      </small>
-                      <p class="fw-bold">اكتب 5 ملاحظات على iOS و Android فقط</p>
+                    <!-- دانش بنیان -->
+                    <li class="achievement-item mb-4">
+                      <div class="achievement-img">
+                        <img src="/assets/img/pic/danesh.jpg" alt="مجوز دانش‌بنیان" />
+                      </div>
+
+                      <div class="achievement-content">
+                        <div class="achievement-title">
+                          <small class="achievement-icon">
+                            <i class="fas fa-check"></i>
+                          </small>
+
+                          <strong>مجوز دانش‌بنیان</strong>
+                        </div>
+
+                        <small class="achievement-date"> ۱۴۰۳/۰۵/۱۵ </small>
+
+                        <p>
+                          سامانه سیماب توسط معاونت علمی ریاست جمهوری به عنوان یک محصول دانش‌بنیان
+                          تأیید گردید.
+                        </p>
+                      </div>
                     </li>
-                    <li class="d-flex align-items-center mb-3">
-                      <small
-                        class="icon-30 bg-blue4 rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0"
-                      >
-                        <i class="fas fa-paperclip"></i>
-                      </small>
-                      <p class="fw-bold">أضف المرفقات والجداول والأكواد والمزيد إلى ملاحظاتك</p>
+
+                    <!-- TRL9 -->
+                    <li class="achievement-item mb-4">
+                      <div class="achievement-img">
+                        <img src="/assets/img/pic/trl9.jpg" alt="تاییدیه TRL9" />
+                      </div>
+
+                      <div class="achievement-content">
+                        <div class="achievement-title">
+                          <small class="achievement-icon">
+                            <i class="fas fa-check"></i>
+                          </small>
+
+                          <strong>تأییدیه TRL9</strong>
+                        </div>
+
+                        <small class="achievement-date"> ۱۴۰۳/۰۹/۲۰ </small>
+
+                        <p>
+                          براساس ارزیابی سافا، سامانه سیماب حائز بالاترین سطح آمادگی فناوری (TRL9)
+                          می‌باشد.
+                        </p>
+                      </div>
                     </li>
-                    <li class="d-flex align-items-center mb-3 op-3">
-                      <small
-                        class="icon-30 bg-blue4 rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0"
-                      >
-                        <i class="fas fa-lock"></i>
-                      </small>
-                      <p class="fw-bold">
-                        حماية الملاحظات وأجهزة الكمبيوتر المحمولة الخاصة بك مع قفل
-                      </p>
-                    </li>
-                    <li class="d-flex align-items-center mb-3 op-3">
-                      <small
-                        class="icon-30 bg-blue4 rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0"
-                      >
-                        <i class="fas fa-undo"></i>
-                      </small>
-                      <p class="fw-bold">وضع التركيز والمظهر الداكن</p>
-                    </li>
-                    <li class="d-flex align-items-center op-3">
-                      <small
-                        class="icon-30 bg-blue4 rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0"
-                      >
-                        <i class="fas fa-download"></i>
-                      </small>
-                      <p class="fw-bold">تصدير إلى تنسيقات Text و PDF و HTML و Markdown</p>
+
+                    <!-- افتا -->
+                    <li class="achievement-item">
+                      <div class="achievement-img">
+                        <img src="/assets/img/pic/afta.jpg" alt="مجوز افتا" />
+                      </div>
+
+                      <div class="achievement-content">
+                        <div class="achievement-title">
+                          <small class="achievement-icon">
+                            <i class="fas fa-clock"></i>
+                          </small>
+
+                          <strong>مجوز افتا</strong>
+                        </div>
+
+                        <small class="achievement-date"> در حال انجام </small>
+
+                        <p>
+                          سامانه سیماب در حال اخذ مجوز افتا از سازمان فناوری اطلاعات ایران می‌باشد.
+                        </p>
+                      </div>
                     </li>
                   </ul>
-                  <a
-                    href="/page-contact-5"
-                    class="btn rounded-pill hover-blue4 fw-bold mt-50 px-5 border-blue4"
-                  >
-                    <small>سجل الان</small>
-                  </a>
                 </div>
               </div>
             </div>
+
+            <!-- افتخارات -->
             <div class="col-lg-6">
               <div class="price-card">
                 <div class="price-header pb-4">
                   <h6>
-                    <img src="/assets/img/icons/price_s4_2.png" alt="" class="icon" /> خطة متميزة
+                    <!-- <img src="/assets/img/icons/price_s4_2.png" alt="" class="icon" /> -->
+                    افتخارات و دستاوردها
                   </h6>
-                  <h2>$29 <small>/ شهري</small></h2>
-                  <p>جرب جميع الميزات المتميزة والدفع لمرة واحدة فقط</p>
+
+                  <h2>افتخارات <small>شرکت</small></h2>
+
+                  <p>بخشی از افتخارات و دستاوردهای علمی و فناورانه شرکت</p>
                 </div>
+
                 <div class="price-body py-4">
                   <ul>
-                    <li class="d-flex align-items-center mb-3">
-                      <small
-                        class="icon-30 bg-blue4 rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0"
-                      >
-                        <i class="far fa-sticky-note"></i>
-                      </small>
-                      <p class="fw-bold">اكتب 5 ملاحظات على iOS و Android فقط</p>
+                    <!-- استقلال -->
+                    <li class="achievement-item mb-4">
+                      <div class="achievement-img">
+                        <img src="/assets/img/pic/esteghlal.jpg" alt="نشان مردمی استقلال" />
+                      </div>
+
+                      <div class="achievement-content">
+                        <div class="achievement-title">
+                          <small class="achievement-icon">
+                            <i class="fas fa-award"></i>
+                          </small>
+
+                          <strong>نشان مردمی استقلال</strong>
+                        </div>
+
+                        <small class="achievement-date"> رتبه برتر </small>
+
+                        <p>
+                          نشان مردمی استقلال به پاس تلاش‌های علمی و پژوهشی مؤثر در جهت استقلال و
+                          خودکفایی کشور اعطا می‌گردد.
+                        </p>
+                      </div>
                     </li>
-                    <li class="d-flex align-items-center mb-3">
-                      <small
-                        class="icon-30 bg-blue4 rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0"
-                      >
-                        <i class="fas fa-paperclip"></i>
-                      </small>
-                      <p class="fw-bold">أضف المرفقات والجداول والأكواد والمزيد إلى ملاحظاتك</p>
+
+                    <!-- فن آب -->
+                    <li class="achievement-item mb-4">
+                      <div class="achievement-img">
+                        <img src="/assets/img/pic/fanab.jpg" alt="رویداد ملی فن‌آب" />
+                      </div>
+
+                      <div class="achievement-content">
+                        <div class="achievement-title">
+                          <small class="achievement-icon">
+                            <i class="fas fa-trophy"></i>
+                          </small>
+
+                          <strong>رویداد ملی فن‌آب</strong>
+                        </div>
+
+                        <small class="achievement-date"> رتبه برتر </small>
+
+                        <p>
+                          طرح ایستگاه خودکار آب و هواشناسی مجهز به اینترنت اشیاء موفق به کسب رتبه
+                          برتر گردید.
+                        </p>
+                      </div>
                     </li>
-                    <li class="d-flex align-items-center mb-3">
-                      <small
-                        class="icon-30 bg-blue4 rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0"
-                      >
-                        <i class="fas fa-lock"></i>
-                      </small>
-                      <p class="fw-bold">
-                        حماية الملاحظات وأجهزة الكمبيوتر المحمولة الخاصة بك مع قفل
-                      </p>
-                    </li>
-                    <li class="d-flex align-items-center mb-3">
-                      <small
-                        class="icon-30 bg-blue4 rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0"
-                      >
-                        <i class="fas fa-undo"></i>
-                      </small>
-                      <p class="fw-bold">وضع التركيز والمظهر الداكن</p>
-                    </li>
-                    <li class="d-flex align-items-center">
-                      <small
-                        class="icon-30 bg-blue4 rounded-circle text-white d-inline-flex align-items-center justify-content-center me-3 flex-shrink-0"
-                      >
-                        <i class="fas fa-download"></i>
-                      </small>
-                      <p class="fw-bold">تصدير إلى تنسيقات Text و PDF و HTML و Markdown</p>
+
+                    <!-- ثبت اختراع -->
+                    <li class="achievement-item">
+                      <div class="achievement-img">
+                        <img src="/assets/img/pic/patent.jpg" alt="گواهی ثبت اختراع" />
+                      </div>
+
+                      <div class="achievement-content">
+                        <div class="achievement-title">
+                          <small class="achievement-icon">
+                            <i class="fas fa-certificate"></i>
+                          </small>
+
+                          <strong>گواهی ثبت اختراع</strong>
+                        </div>
+
+                        <small class="achievement-date"> طرح برتر بنیاد ملی نخبگان </small>
+
+                        <p>
+                          دو نمونه از طرح‌های مربوط به ساخت سنسورها موفق به ثبت اختراع گردیده‌اند.
+                        </p>
+                      </div>
                     </li>
                   </ul>
-                  <a
-                    href="/page-contact-5"
-                    class="btn rounded-pill bg-blue4 fw-bold text-white px-5 mt-50"
-                  >
-                    <small>سجل الان</small>
-                  </a>
-                </div>
-                <div class="off">
-                  <span
-                    >20% <br />
-                    خصم</span
-                  >
                 </div>
               </div>
             </div>
@@ -1033,7 +1065,7 @@ onMounted(() => {
                         aria-expanded="false"
                         aria-controls="collapse6"
                       >
-                        لا يدعم نيترو تخزين البيانات على iCloud?
+                        آیا سامانه امکان اتصال به سایر سامانه‌ها و تجهیزات را دارد؟
                       </button>
                     </h2>
                     <div
@@ -1043,8 +1075,9 @@ onMounted(() => {
                       data-bs-parent="#accordionSt4"
                     >
                       <div class="accordion-body">
-                        من خلال التعاون مع العملاء في مناقشة الاحتياجات والطلب، نحن قادرون على تحقيق
-                        التفاهم المتبادل، واكتساب ثقة العملاء لتقديم المشورة المناسبة
+                        بله. سامانه سیماب با استفاده از پروتکل‌ها و سرویس‌های ارتباطی مختلف، قابلیت
+                        تبادل اطلاعات و اتصال به سامانه‌ها، تجهیزات و منابع داده مختلف را دارد. این
+                        قابلیت امکان جمع‌آوری و یکپارچه‌سازی داده‌ها از منابع مختلف را فراهم می‌کند.
                       </div>
                     </div>
                   </div>
@@ -1058,7 +1091,7 @@ onMounted(() => {
                         aria-expanded="false"
                         aria-controls="collapse7"
                       >
-                        كيف يمكنني تغيير البريد الإلكتروني أو كلمة المرور الخاصة بي?
+                        آیا سامانه قابلیت شخصی‌سازی متناسب با نیاز سازمان را دارد؟
                       </button>
                     </h2>
                     <div
@@ -1068,8 +1101,9 @@ onMounted(() => {
                       data-bs-parent="#accordionSt4"
                     >
                       <div class="accordion-body">
-                        من خلال التعاون مع العملاء في مناقشة الاحتياجات والطلب، نحن قادرون على تحقيق
-                        التفاهم المتبادل، واكتساب ثقة العملاء لتقديم المشورة المناسبة
+                        بله. ساختار سامانه به‌گونه‌ای طراحی شده است که امکان توسعه و شخصی‌سازی
+                        ماژول‌ها، فرآیندها، فرم‌ها، گزارش‌ها و دسترسی‌های کاربران متناسب با نیاز هر
+                        سازمان وجود داشته باشد.
                       </div>
                     </div>
                   </div>
@@ -1083,7 +1117,7 @@ onMounted(() => {
                         aria-expanded="true"
                         aria-controls="collapse8"
                       >
-                        هل يمكن استخدام ترخيص Premium الخاص بي لجميع الأجهزة?
+                        آیا امکان پشتیبانی و توسعه سامانه وجود دارد؟
                       </button>
                     </h2>
                     <div
@@ -1093,8 +1127,8 @@ onMounted(() => {
                       data-bs-parent="#accordionSt4"
                     >
                       <div class="accordion-body">
-                        من خلال التعاون مع العملاء في مناقشة الاحتياجات والطلب، نحن قادرون على تحقيق
-                        التفاهم المتبادل، واكتساب ثقة العملاء لتقديم المشورة المناسبة
+                        بله. پس از راه‌اندازی سامانه، خدمات پشتیبانی، رفع اشکال، به‌روزرسانی و توسعه
+                        قابلیت‌های سامانه متناسب با نیازهای سازمان ارائه می‌شود.
                       </div>
                     </div>
                   </div>
@@ -1275,6 +1309,106 @@ onMounted(() => {
   .clients h5 {
     font-size: 15px;
     margin-bottom: 30px !important;
+  }
+}
+.achievement-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  list-style: none;
+}
+
+/* عکس */
+.achievement-img {
+  width: 85px;
+  height: 85px;
+  min-width: 85px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f5f7fa;
+}
+
+.achievement-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* متن */
+.achievement-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.achievement-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 3px;
+}
+
+.achievement-title strong {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.achievement-icon {
+  width: 25px;
+  height: 25px;
+  min-width: 25px;
+  border-radius: 50%;
+  background: #00b4d8;
+  color: #fff;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.achievement-icon i {
+  font-size: 11px;
+}
+
+.achievement-date {
+  display: block;
+  color: #00b4d8;
+  font-size: 10px;
+  margin-bottom: 4px;
+}
+
+.achievement-content p {
+  font-size: 11px;
+  line-height: 1.8;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* موبایل */
+@media (max-width: 767.98px) {
+  .achievement-item {
+    gap: 10px;
+  }
+
+  .achievement-img {
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+  }
+
+  .achievement-title strong {
+    font-size: 12px;
+  }
+
+  .achievement-content p {
+    font-size: 10px;
+    line-height: 1.7;
+  }
+
+  .achievement-icon {
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
   }
 }
 </style>

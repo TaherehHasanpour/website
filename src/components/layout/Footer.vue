@@ -294,8 +294,8 @@
   }
 
   .style-4 .footer-company .logo {
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     width: 100%;
   }
 
