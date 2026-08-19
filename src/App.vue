@@ -126,7 +126,8 @@ onMounted(() => {
             <div class="info">
               <!-- <small class="mb-50 title_small">نوتيرو - تطبيق مذكرة سهل الاستخدام</small> -->
               <h1 class="mb-30">شرکت <span>آتی</span></h1>
-              <p class="text">شرکت دانشبنیان پایدار تجهیز آتی خراسان</p>
+              <p class="text">شرکت دانش بنیان پایدار تجهیز آتی خراسان</p>
+              <p class="text">طراحی و توسعه سامانه مدیریت داده و اطلاعات منابع آب</p>
               <!-- <div class="d-flex align-items-center mt-50">
                 <a
                   href="https://www.apple.com/app-store/"
@@ -335,102 +336,109 @@ onMounted(() => {
         <img src="/assets/img/about/about_s4_bubble.png" alt="" class="bubble" />
       </div>
 
-      <div class="content sec-content">
+      <div class="content sec-content" data-scroll-index="3">
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-lg-5 order-2 order-lg-0">
               <div class="info">
                 <div class="section-head style-4">
-                  <small class="title_small">إدارة أفضل للملاحظات</small>
-                  <h2 class="mb-30">ملاحظاتك <span>في امان</span></h2>
+                  <!-- <small class="title_small">إدارة أفضل للملاحظات</small> -->
+                  <h2 class="mb-30">ویژگی های<span>مـــا</span></h2>
                 </div>
                 <p class="text mb-40">
-                  يتزامن تلقائيًا عبر جميع أجهزتك. يمكنك أيضًا الوصول إلى الملاحظات وكتابتها بدون
-                  اتصال بالإنترنت.
+                  طراحی و توسعه نرم‌افزار مدیریت اطلاعات و داده های منابع آب و سامانه مدیریت فرایند
+                  های سازمانی
                 </p>
                 <div class="faq style-3 style-4">
-                  <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="heading1">
-                        <button
-                          class="accordion-button"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapse1"
-                          aria-expanded="true"
-                          aria-controls="collapse1"
-                        >
-                          إنشاء وحفظ الملاحظات الخاصة بك مع الوسائط المتعددة
-                        </button>
-                      </h2>
-                      <div
-                        id="collapse1"
-                        class="accordion-collapse collapse show"
-                        aria-labelledby="heading1"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div class="accordion-body">
-                          يتم دعم الصور ومقاطع الفيديو وملفات PDF والملفات الصوتية. قم بإنشاء
-                          تعبيرات رياضية ومخططات مباشرة من التطبيق. التقط صورًا باستخدام تطبيق
-                          الهاتف المحمول واحفظها في ملاحظة.
-                        </div>
+                  <div class="accordion d-flex flex-column gap-3" id="accordionExample">
+                    <div
+                      class="d-flex align-items-center security-item"
+                      data-aos="fade-right"
+                      data-aos-duration="1500"
+                    >
+                      <div class="icon">
+                        <img src="/assets/img/gifs/safe.gif" alt="image" />
+                      </div>
+
+                      <div class="text">
+                        <h4>امنیت و رمزنگاری</h4>
+                        <p>طبق آخرین استانداردهای امنیتی</p>
                       </div>
                     </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="heading2">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapse2"
-                          aria-expanded="false"
-                          aria-controls="collapse2"
-                        >
-                          ملحق Web Clipper
-                        </button>
-                      </h2>
-                      <div
-                        id="collapse2"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="heading2"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div class="accordion-body">
-                          يتم دعم الصور ومقاطع الفيديو وملفات PDF والملفات الصوتية. قم بإنشاء
-                          تعبيرات رياضية ومخططات مباشرة من التطبيق. التقط صورًا باستخدام تطبيق
-                          الهاتف المحمول واحفظها في ملاحظة.
-                        </div>
+
+                    <div
+                      class="d-flex align-items-center security-item"
+                      data-aos="fade-right"
+                      data-aos-duration="1500"
+                    >
+                      <div class="icon">
+                        <img src="/assets/img/gifs/speedometer.gif" alt="image" />
+                      </div>
+                      <div class="text">
+                        <h4>سرعت و عملکرد</h4>
+                        <p>سرعت بالا و عملکرد بهینه</p>
                       </div>
                     </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="heading3">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapse3"
-                          aria-expanded="false"
-                          aria-controls="collapse3"
-                        >
-                          حماية ملاحظتك مع القفل
-                        </button>
-                      </h2>
-                      <div
-                        id="collapse3"
-                        class="accordion-collapse collapse"
-                        aria-labelledby="heading3"
-                        data-bs-parent="#accordionExample"
-                      >
-                        <div class="accordion-body">
-                          يتم دعم الصور ومقاطع الفيديو وملفات PDF والملفات الصوتية. قم بإنشاء
-                          تعبيرات رياضية ومخططات مباشرة من التطبيق. التقط صورًا باستخدام تطبيق
-                          الهاتف المحمول واحفظها في ملاحظة.
-                        </div>
+                    <div
+                      class="d-flex align-items-center security-item"
+                      data-aos="fade-right"
+                      data-aos-duration="1500"
+                    >
+                      <div class="icon">
+                        <img src="/assets/img/gifs/responsive.gif" alt="image" />
+                      </div>
+                      <div class="text">
+                        <h4>تطابق و سازگاری</h4>
+                        <p>با انواع دستگا‌ها و سیستم‌عامل‌ها</p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex align-items-center security-item"
+                      data-aos="fade-right"
+                      data-aos-duration="1500"
+                    >
+                      <div class="icon">
+                        <img src="/assets/img/gifs/network.gif" alt="image" />
+                      </div>
+                      <div class="text">
+                        <h4>آنلاین و آفلاین</h4>
+                        <p>کارکرد در حالت آنلاین و آفلاین</p>
+                      </div>
+                    </div>
+
+                    <!-- feature box -->
+                    <div
+                      class="d-flex align-items-center security-item"
+                      data-aos="fade-right"
+                      data-aos-duration="1500"
+                    >
+                      <div class="icon">
+                        <img src="/assets/img/gifs/checklist.gif" alt="image" />
+                      </div>
+                      <div class="text">
+                        <h4>صحت‌سنجی داده</h4>
+                        <p>اعتبارسنجی زمان، مکان و تصویر</p>
+                      </div>
+                    </div>
+
+                    <!-- feature box -->
+                    <div
+                      class="d-flex align-items-center security-item"
+                      data-aos="fade-right"
+                      data-aos-duration="1500"
+                    >
+                      <div class="icon">
+                        <img src="/assets/img/gifs/computer.gif" alt="image" />
+                      </div>
+                      <div class="text">
+                        <h4>رابط کاربری</h4>
+                        <p>آسان، زیبا و کاربرپسند</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <a
+                <!-- <a
                   href="https://chrome.google.com/webstore/category/extensions"
                   class="btn btn-img mt-40 rounded-pill"
                   target="_blank"
@@ -442,7 +450,7 @@ onMounted(() => {
                     <small>متاح في</small>
                     <h6>متجر كروم الالكتروني</h6>
                   </div>
-                </a>
+                </a> -->
               </div>
             </div>
             <div class="col-lg-6 order-0 order-lg-2">
@@ -504,7 +512,7 @@ onMounted(() => {
         <img src="/assets/img/about/about_s4_bubble.png" alt="" class="bubble" />
       </div>
 
-      <div class="integration pt-60" data-scroll-index="3">
+      <div class="integration pt-60">
         <div class="section-head text-center style-4">
           <small class="title_small">دفعة لمرة واحدة</small>
           <h2 class="mb-20">متوافق مع <span>التطبيقات الشعبية</span></h2>
@@ -540,9 +548,9 @@ onMounted(() => {
       <div class="screenshots-slider style-4">
         <div class="swiper-container">
           <div class="swiper-wrapper">
-            <div class="swiper-slide" v-for="n in 5" :key="n">
+            <div class="swiper-slide" v-for="n in 10" :key="n">
               <div class="img">
-                <img :src="`/assets/img/screenshots/${n}.${n === 3 ? 'jpg' : 'png'}`" alt="" />
+                <img  :src="`/assets/img/screenshots/${n}.png`" alt="" />
               </div>
             </div>
           </div>
@@ -558,49 +566,56 @@ onMounted(() => {
           <div class="row">
             <div class="col-lg-5">
               <div class="section-head style-4">
-                <small class="title_small">اراء العملاء</small>
-                <h2 class="mb-30">محبوب من <span>العملاء</span></h2>
+                <!-- <small class="title_small">اراء العملاء</small> -->
+                <h2 class="mb-30">سنـــسورها</h2>
               </div>
               <p class="text mb-40">
-                أحب نوتيرو من آلاف العملاء في جميع أنحاء العالم وحصل على الثقة من الشركات الكبرى.
+                توسعه ماژول‌های محاسباتی همچون بیلان منابع آب، هیدروگراف، کموگراف و... بکارگیری
+                روش‌های نوین همچون هوش مصنوعی، اینترنت اشیا و بهینه‌سازی در حوزه آب و هواشناسی
               </p>
-              <div class="numbs">
-                <div class="num-card">
-                  <div class="icon img-contain">
-                    <img src="/assets/img/icons/testi_s4_ic1.png" alt="" />
-                  </div>
-                  <h2>2,5M+</h2>
-                  <p>
-                    تحميل و <br />
-                    تثبيت
-                  </p>
-                </div>
-                <div class="num-card">
-                  <div class="icon img-contain">
-                    <img src="/assets/img/icons/testi_s4_ic2.png" alt="" />
-                  </div>
-                  <h2>4.8/5</h2>
-                  <div class="stars">
-                    <i class="fas fa-star" v-for="n in 5" :key="n"></i>
-                  </div>
-                  <p>بناءاً على هذا العدد من التقييمات 1،258</p>
-                </div>
-              </div>
+
               <div class="d-flex align-items-center mt-70">
-                <a
-                  href="https://www.apple.com/app-store/"
-                  class="btn rounded-pill bg-blue4 fw-bold text-white me-4"
-                  target="_blank"
-                >
-                  <small>انظر التعليقات على متجر التطبيقات</small>
-                </a>
-                <a href="https://youtu.be/pGbIOC83-So?t=21" data-lity class="play-btn">
-                  <span class="icon me-2"><i class="fas fa-play ms-1"></i></span>
-                  <strong class="small"
-                    >مشاهده <br />
-                    البرومو</strong
-                  >
-                </a>
+                <ul class="design_block small-design-block">
+                  <li data-aos="fade-up" data-aos-duration="1500">
+                    <span class="check-icon">✓</span>
+                    <div>
+                      <h4>پروتکل MQTT (اینترنت اشیاء)</h4>
+                      <p>پروتکل مخصوص دستگاه‌های با قابلیت اینترنت اشیاء</p>
+                    </div>
+                  </li>
+
+                  <li data-aos="fade-up" data-aos-duration="1500">
+                    <span class="check-icon">✓</span>
+                    <div>
+                      <h4>پروتکل HTTP(s)</h4>
+                      <p>پروتکل مخصوص دستگاه‌های با قابلیت اتصال اینترنتی</p>
+                    </div>
+                  </li>
+
+                  <li data-aos="fade-up" data-aos-duration="1500">
+                    <span class="check-icon">✓</span>
+                    <div>
+                      <h4>پروتکل FTP</h4>
+                      <p>پروتکل مخصوص دستگاه‌های با قابلیت ذخیره‌سازی FTP</p>
+                    </div>
+                  </li>
+
+                  <li data-aos="fade-up" data-aos-duration="1500">
+                    <span class="check-icon">✓</span>
+                    <div>
+                      <h4>پروتکل SOCKET</h4>
+                      <p>پروتکل مخصوص دستگاه‌های با قابلیت وب‌سوکت</p>
+                    </div>
+                  </li>
+
+                  <li data-aos="fade-up" data-aos-duration="1500">
+                    <span class="check-icon">✓</span>
+                    <div>
+                      <h4>پیام کوتاه SMS</h4>
+                      <p>پروتکل مخصوص دستگاه‌های با قابلیت ارسال پیامک</p>
+                    </div>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="col-lg-7">
@@ -1183,5 +1198,56 @@ onMounted(() => {
 .clients.style-4 .client-name {
   text-align: center;
   margin: 12px 0 0;
+}
+.security-item .icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.security-item .text h4 {
+  font-size: 15px;
+}
+
+.security-item .text p {
+  font-size: 11px;
+}
+
+.small-design-block {
+  width: 100%;
+}
+
+.small-design-block li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.small-design-block .check-icon {
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #198754;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.small-design-block h4 {
+  font-size: 15px;
+  margin: 0 0 4px;
+  line-height: 1.5;
+}
+
+.small-design-block p {
+  font-size: 11px;
+  margin: 0;
+  line-height: 1.7;
+  opacity: 0.7;
 }
 </style>
