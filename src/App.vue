@@ -229,41 +229,61 @@ onMounted(() => {
           <!-- <small class="title_small bg-white">نوتيرو - تطبيق مذكرة سهل الاستخدام</small> -->
           <h2 class="mb-70">خدمات <span>ارئه</span>میدیم</h2>
         </div>
-        <div class="content">
+        <div class="content features-content">
           <div class="features-card">
             <div class="icon img-contain">
               <img src="/assets/img/icons/fe1.png" alt="" />
             </div>
-            <h6>دیتالاگــر</h6>
+            <h6>طراحی و توسعه سامانه‌های برخط</h6>
           </div>
+
           <div class="features-card">
             <div class="icon img-contain">
               <img src="/assets/img/icons/fe2.png" alt="" />
             </div>
-            <h6>سنســور های آب</h6>
+            <h6>تحلیل داده‌های کلان و ژئودیتا</h6>
           </div>
+
           <div class="features-card">
             <div class="icon img-contain">
               <img src="/assets/img/icons/fe3.png" alt="" />
-              <span
+              <!-- <span
                 class="label icon-40 alert-success text-success rounded-circle small text-uppercase fw-bold"
               >
                 جديد
-              </span>
+              </span> -->
             </div>
-            <h6>ایستگاه هــواشناسی</h6>
+            <h6>توسعه اپلیکیشن‌های اندروید و IOS</h6>
           </div>
+
           <div class="features-card">
             <div class="icon img-contain">
               <img src="/assets/img/icons/fe4.png" alt="" />
             </div>
-            <h6>اپلیکیشن داده برداری</h6>
+            <h6>طراحی و ساخت سنسورهای هواشناسی</h6>
           </div>
+
           <div class="features-card">
             <div class="icon img-contain">
               <img src="/assets/img/icons/fe5.png" alt="" />
             </div>
-            <h6>ادوات الکترونیـــکی</h6>
+            <h6>طراحی و ساخت دیتالاگر و ادوات الکترونیکی</h6>
+          </div>
+
+          <!-- کارت 6 -->
+          <div class="features-card">
+            <div class="icon img-contain">
+              <img src="/assets/img/icons/fe2.png" alt="" />
+            </div>
+            <h6>طراحی و ساخت ایستگاه های خودکار هواشناسی</h6>
+          </div>
+
+          <!-- کارت 7 -->
+          <div class="features-card">
+            <div class="icon img-contain">
+              <img src="/assets/img/icons/fe2.png" alt="" />
+            </div>
+            <h6>اینترنت اشیاء</h6>
           </div>
         </div>
       </div>
@@ -1358,7 +1378,7 @@ onMounted(() => {
   height: 25px;
   min-width: 25px;
   border-radius: 50%;
-  background: #00b4d8;
+  background: #01305a;
   color: #fff;
 
   display: inline-flex;
@@ -1372,7 +1392,7 @@ onMounted(() => {
 
 .achievement-date {
   display: block;
-  color: #00b4d8;
+  color: #01305a;
   font-size: 10px;
   margin-bottom: 4px;
 }
@@ -1410,5 +1430,20 @@ onMounted(() => {
     height: 22px;
     min-width: 22px;
   }
+}
+.faq.style-4 .accordion-item {
+  background-color: #fff;
+}
+
+.faq.style-4 .accordion-button.collapsed {
+  background-color: #fff !important;
+}
+
+.faq.style-4 .accordion-button:not(.collapsed) {
+  background-color: #e6f1f8 !important;
+}
+
+.faq.style-4 .accordion-body {
+  background-color: #e6f1f8 !important;
 }
 </style>

@@ -159,7 +159,7 @@
   padding: 4px 12px;
   border-radius: 20px;
   background: rgba(0, 180, 216, 0.1);
-  color: #00b4d8;
+  color: #01305a;
   margin-bottom: 15px;
 }
 
@@ -178,7 +178,7 @@
 
 .style-4 .info-item i {
   font-size: 17px;
-  color: #00b4d8;
+  color: #01305a;
 }
 
 /* Footer titles */
@@ -207,7 +207,7 @@
 }
 
 .style-4 .footer-links li a:hover {
-  color: #00b4d8;
+  color: #01305a;
   padding-right: 5px;
 }
 
@@ -228,7 +228,7 @@
   justify-content: center;
   border-radius: 50%;
   background: rgba(0, 180, 216, 0.1);
-  color: #00b4d8;
+  color: #01305a;
   font-size: 18px;
 }
 
@@ -266,7 +266,7 @@
 }
 
 .style-4 .footer-social a:hover {
-  background: #00b4d8;
+  background: #01305a;
   color: #fff;
 }
 
@@ -283,7 +283,7 @@
 }
 
 .style-4 .copywrite strong {
-  color: #00b4d8;
+  color: #01305a;
 }
 /* Mobile */
 @media (max-width: 991.98px) {
