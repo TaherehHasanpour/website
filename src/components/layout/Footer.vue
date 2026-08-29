@@ -17,7 +17,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="footer-company">
               <div class="logo mb-20">
-                <img src="/assets/img/pic/atey_logo.png" alt="پایدار تجهیز آتی خراسان" />
+                  <img src="/assets/img/logos/atey_logo.png" alt="" />
               </div>
 
               <h5>پایدار تجهیز آتی خراسان</h5>

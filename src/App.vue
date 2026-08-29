@@ -1,7 +1,24 @@
 <script setup>
-import { onMounted } from 'vue'
+import { onMounted, ref } from 'vue'
 import Footer from './components/layout/Footer.vue'
 
+const bannerItems = ref([
+  {
+    title: 'سیماب',
+    img: '/assets/img/logos/logo-simmab.png',
+    link: 'https://simmab.ir/',
+  },
+  {
+    title: 'گشتاب',
+    img: '/assets/img/logos/logo-gshtab.png',
+    link: 'https://gashtab.ir/',
+  },
+  {
+    title: 'آبان',
+    img: '/assets/img/logos/logo-aban.png',
+    link: '#',
+  },
+])
 // این کتابخانه‌ها (jQuery, Bootstrap, Swiper, Lity, Fancybox, WOW, scrollIt)
 // در index.html به صورت global script لود شده‌اند (window.$ / window.jQuery و ...)
 // چون Vue خودش DOM را render می‌کند، باید بعد از mount شدن کامپوننت
@@ -66,7 +83,7 @@ onMounted(() => {
   <nav class="navbar navbar-expand-lg navbar-light style-4" id="main-nav">
     <div class="container">
       <a class="navbar-brand" href="#" data-scroll-nav="0">
-        <img src="/assets/img/logo_lgr.png" alt="" />
+        <img src="/assets/img/logos/atey_logo.png" alt="" />
       </a>
       <button
         class="navbar-toggler"
@@ -125,47 +142,19 @@ onMounted(() => {
         <div class="row gx-0">
           <div class="col-lg-6">
             <div class="info">
-              <!-- <small class="mb-50 title_small">نوتيرو - تطبيق مذكرة سهل الاستخدام</small> -->
-              <h1 class="mb-30">شرکت <span>آتی</span></h1>
+              <h1 class="mb-30">شرکت <span>آتــــــی</span></h1>
               <p class="text">شرکت دانش بنیان پایدار تجهیز آتی خراسان</p>
-              <p class="text">طراحی و توسعه سامانه مدیریت داده و اطلاعات منابع آب</p>
-              <!-- <div class="d-flex align-items-center mt-50">
-                <a
-                  href="https://www.apple.com/app-store/"
-                  class="btn rounded-pill bg-blue4 fw-bold text-white me-4"
-                  target="_blank"
-                >
-                  <small><i class="fab fa-apple me-2 pe-2 border-end"></i> تحميل التطبيق</small>
-                </a>
-                <a href="https://youtu.be/pGbIOC83-So?t=21" data-lity class="play-btn">
-                  <span class="icon me-2"><i class="fas fa-play ms-1"></i></span>
-                  <strong class="small">مشاهدة <br /> البرومو</strong>
-                </a>
-              </div> -->
-              <span class="mt-100 me-5">
-                <small
-                  class="icon-30 bg-gray rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-1"
-                >
-                  <i class="fas fa-sync"></i>
-                </small>
-                <small class="text-uppercase">سیــماب</small>
-              </span>
-              <span class="mt-100 me-5">
-                <small
-                  class="icon-30 bg-gray rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-1"
-                >
-                  <i class="fas fa-credit-card"></i>
-                </small>
-                <small class="text-uppercase">گشــتاب</small>
-              </span>
-              <span class="mt-100 me-5">
-                <small
-                  class="icon-30 bg-gray rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-1"
-                >
-                  <i class="fas fa-credit-card"></i>
-                </small>
-                <small class="text-uppercase">آبــان</small>
-              </span>
+
+              <div class="used_app w-100" style="margin-bottom: 40px">
+                <ul>
+                  <li v-for="item in bannerItems" class="tooltipParent bg-white p-1">
+                    <a :href="item.link" target="_blank">
+                      <img :src="item.img" alt="image" />
+                      <span class="tooltiptext">{{ item.title }}</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
           <div class="col-lg-6">
@@ -177,7 +166,10 @@ onMounted(() => {
       </div>
       <img src="/assets/img/header/header_4_bubble.png" alt="" class="bubble" />
     </div>
-    <img src="/assets/img/header/header_4_wave.png" alt="" class="wave" />
+
+    <div class="wave-wrap">
+      <img src="/assets/img/header/header_4_wave.png" alt="" class="wave" />
+    </div>
   </header>
 
   <main>
@@ -232,21 +224,21 @@ onMounted(() => {
         <div class="content features-content">
           <div class="features-card">
             <div class="icon img-contain">
-              <img src="/assets/img/icons/fe1.png" alt="" />
+              <img src="/assets/img/icons/fe/22.jpg" alt="" />
             </div>
             <h6>طراحی و توسعه سامانه‌های برخط</h6>
           </div>
 
           <div class="features-card">
             <div class="icon img-contain">
-              <img src="/assets/img/icons/fe2.png" alt="" />
+              <img src="/assets/img/icons/fe/1.jpg" alt="" />
             </div>
             <h6>تحلیل داده‌های کلان و ژئودیتا</h6>
           </div>
 
           <div class="features-card">
             <div class="icon img-contain">
-              <img src="/assets/img/icons/fe3.png" alt="" />
+              <img src="/assets/img/icons/fe/2.jpg" alt="" />
               <!-- <span
                 class="label icon-40 alert-success text-success rounded-circle small text-uppercase fw-bold"
               >
@@ -258,14 +250,14 @@ onMounted(() => {
 
           <div class="features-card">
             <div class="icon img-contain">
-              <img src="/assets/img/icons/fe4.png" alt="" />
+              <img src="/assets/img/icons/fe/5.png" alt="" />
             </div>
             <h6>طراحی و ساخت سنسورهای هواشناسی</h6>
           </div>
 
           <div class="features-card">
             <div class="icon img-contain">
-              <img src="/assets/img/icons/fe5.png" alt="" />
+              <img src="/assets/img/icons/fe/4.jpg" alt="" />
             </div>
             <h6>طراحی و ساخت دیتالاگر و ادوات الکترونیکی</h6>
           </div>
@@ -273,7 +265,7 @@ onMounted(() => {
           <!-- کارت 6 -->
           <div class="features-card">
             <div class="icon img-contain">
-              <img src="/assets/img/icons/fe2.png" alt="" />
+              <img src="/assets/img/icons/fe/6.jpg" alt="" />
             </div>
             <h6>طراحی و ساخت ایستگاه های خودکار هواشناسی</h6>
           </div>
@@ -281,7 +273,7 @@ onMounted(() => {
           <!-- کارت 7 -->
           <div class="features-card">
             <div class="icon img-contain">
-              <img src="/assets/img/icons/fe2.png" alt="" />
+              <img src="/assets/img/icons/fe/7.png" alt="" />
             </div>
             <h6>اینترنت اشیاء</h6>
           </div>
@@ -297,7 +289,7 @@ onMounted(() => {
           <div class="row align-items-center justify-content-between">
             <div class="col-lg-6">
               <div class="img mb-30 mb-lg-0">
-                <img src="/assets/img/about/ipad.png" alt="" />
+                <img src="/assets/img/about/dashboard.png" alt="" />
               </div>
             </div>
             <div class="col-lg-5">
@@ -475,7 +467,7 @@ onMounted(() => {
             </div>
             <div class="col-lg-6 order-0 order-lg-2">
               <div class="img mb-30 mb-lg-0">
-                <img src="/assets/img/about/2mobiles.png" alt="" />
+                <img src="/assets/img/about/2phone.png" alt="" />
               </div>
             </div>
           </div>
@@ -1160,6 +1152,7 @@ onMounted(() => {
       </div>
     </section>
   </main>
+
   <Footer></Footer>
   <!-- ====== دکمه‌ی بازگشت به بالا ====== -->
   <a
@@ -1177,6 +1170,11 @@ onMounted(() => {
 .security-item .icon img {
   width: 50px;
   height: 50px;
+  border-radius: 50px;
+}
+
+.img-contain img {
+  border-radius: 60px;
 }
 
 .security-item .text h4 {
@@ -1445,5 +1443,123 @@ onMounted(() => {
 
 .faq.style-4 .accordion-body {
   background-color: #e6f1f8 !important;
+}
+
+/* =================heder */
+/* ===== کلاس‌های اصلی (بدون نیاز به banner_section) ===== */
+.used_app {
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.used_app ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.used_app ul li {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  border: 4px solid #01305a;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* همپوشانی */
+.used_app ul li:not(:first-child) {
+  margin-right: -25px;
+}
+
+/* تصویر */
+.used_app ul li img {
+  width: 65%;
+  height: 65%;
+  object-fit: contain;
+  display: block;
+}
+
+/* لینک */
+.used_app ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+/* ===== Tooltip ===== */
+.tooltipParent .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: var(#caf0f8);
+  color: var(#01305a);
+  text-align: center;
+  border: 3px solid #01305a;
+  border-radius: 6px;
+  padding: 6px 10px;
+  position: absolute;
+  z-index: 10;
+  top: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-weight: bold;
+  font-size: 14px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.tooltipParent .tooltiptext::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent var(--bg-purple, #caf0f8) transparent;
+}
+
+.tooltipParent:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ===== واکنش‌گرایی ===== */
+@media (max-width: 576px) {
+  .used_app ul li {
+    width: 60px;
+    height: 60px;
+    border-width: 3px;
+    padding: 3px;
+  }
+  .used_app ul li:not(:first-child) {
+    margin-right: -18px;
+  }
+  .used_app ul li img {
+    width: 60%;
+    height: 60%;
+  }
+  .tooltipParent .tooltiptext {
+    width: 160px;
+    font-size: 12px;
+    top: 110%;
+    white-space: normal;
+  }
 }
 </style>
