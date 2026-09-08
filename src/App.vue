@@ -67,7 +67,7 @@ onMounted(() => {
   <!-- ====== لودر ====== -->
   <div id="preloader">
     <div id="loading-wrapper" class="show">
-      <div id="loading-text"><img src="/assets/img/logo_loading.png" alt="" /></div>
+      <div id="loading-text"><img src="/assets/img/logos/atey_logo.png" alt="" /></div>
       <div id="loading-content"></div>
     </div>
   </div>
@@ -159,7 +159,7 @@ onMounted(() => {
           </div>
           <div class="col-lg-6">
             <div class="img">
-              <img src="/assets/img/header/header_4.png" alt="" />
+              <img src="/assets/img/header/header_42.png" alt="" />
             </div>
           </div>
         </div>
