@@ -559,7 +559,7 @@ onMounted(() => {
         <img src="/assets/img/about/about_s4_bubble.png" alt="" class="bubble" />
       </div>
 
-      <div class="integration pt-60">
+      <!-- <div class="integration pt-60">
         <div class="section-head text-center style-4">
           <small class="title_small">دفعة لمرة واحدة</small>
           <h2 class="mb-20">متوافق مع <span>التطبيقات الشعبية</span></h2>
@@ -587,7 +587,7 @@ onMounted(() => {
         <img src="/assets/img/about/intg_back.png" alt="" class="intg-back" />
       </div>
       <img src="/assets/img/about/about_s4_wave.png" alt="" class="top-wave" />
-      <img src="/assets/img/about/about_s4_wave.png" alt="" class="bottom-wave" />
+      <img src="/assets/img/about/about_s4_wave.png" alt="" class="bottom-wave" /> -->
     </section>
 
     <!-- ====== اسکرین‌شات‌ها ====== -->
@@ -669,33 +669,26 @@ onMounted(() => {
               <div class="testi-cards">
                 <div class="client_card">
                   <div class="user_img">
-                    <img src="/assets/img/testimonials/user4.png" alt="" />
+                    <img src="/assets/img/testimonials/user44.png" alt="" />
                   </div>
                   <div class="inf_content">
-                    <div class="stars mb-2">
-                      <i class="fas fa-star" v-for="n in 5" :key="n"></i>
-                    </div>
-                    <h6>
-                      "يمكنك حتى إرسال رسائل بريد إلكتروني إلى Evernote وجمع <br />
-                      كل الأشياء التي تحتاجها في مكان واحد."
-                    </h6>
+                    <h6>سنـــسور جهت باد</h6>
                     <p>
-                      يورجن ك.
-                      <span class="text-muted">/ أول قسم التسويق في <span>Brator</span></span>
+                      وسیله‌ای است که جهتی که باد از آن می‌وزد را تشخیص می‌دهد و معمولاً جهت را به
+                      صورت درجه نسبت به شمال یا یکی از جهت‌های اصلی مانند شمال، جنوب، شرق و غرب
+                      گزارش می‌کند.
                     </p>
                   </div>
                 </div>
                 <div class="client_card">
                   <div class="user_img">
-                    <img src="/assets/img/testimonials/user5.png" alt="" />
+                    <img src="/assets/img/testimonials/datalogger.png" alt="" />
                   </div>
                   <div class="inf_content">
-                    <div class="stars mb-2">
-                      <i class="fas fa-star" v-for="n in 5" :key="n"></i>
-                    </div>
-                    <h6>"نوتيرو - الخيار الأول الذي أختاره لتطبيق الملاحظات. رائع"</h6>
+                    <h6>دیتـــالاگـر</h6>
                     <p>
-                      فودن ص. <span class="text-muted">/ مدير في <span>Ecoland Resort</span></span>
+                      دیتالاگر (Data Logger) دستگاهی است که برای دریافت، ثبت و ذخیره‌سازی داده‌های
+                      سنسورها در طول زمان استفاده می‌شود.
                     </p>
                   </div>
                 </div>

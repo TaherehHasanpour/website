@@ -8092,7 +8092,7 @@ header.style-16 .screen-img .diamond {
 .testimonials.style-1 .content .info .client_card .user_img img {
   width: 45px;
   height: 45px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -8322,7 +8322,7 @@ header.style-16 .screen-img .diamond {
 .testimonials.style-4 .content .testi-cards .client_card .user_img img {
   width: 90px;
   height: 90px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -8846,7 +8846,7 @@ header.style-16 .screen-img .diamond {
 .testimonials.style-13 .testi-card .img .user_img {
   width: 60px;
   height: 60px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   -o-object-fit: cover;
   object-fit: cover;
   margin: auto;
