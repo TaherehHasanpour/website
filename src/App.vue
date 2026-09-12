@@ -1,6 +1,8 @@
 <script setup>
-import { onMounted, ref } from 'vue'
+import { onMounted, onBeforeUnmount, ref } from 'vue'
 import Footer from './components/layout/Footer.vue'
+// import Swiper from 'swiper/bundle'
+// import 'swiper/css/bundle'
 
 const bannerItems = ref([
   {
@@ -19,47 +21,47 @@ const bannerItems = ref([
     link: '#',
   },
 ])
-// این کتابخانه‌ها (jQuery, Bootstrap, Swiper, Lity, Fancybox, WOW, scrollIt)
-// در index.html به صورت global script لود شده‌اند (window.$ / window.jQuery و ...)
-// چون Vue خودش DOM را render می‌کند، باید بعد از mount شدن کامپوننت
-// دوباره پلاگین‌هایی مثل Swiper و WOW را init کنیم؛ در غیر این صورت
-// اسکریپت‌های assets/js/main.js زودتر از رندر Vue اجرا می‌شوند و اثر نمی‌کنند.
+
+// نگه‌داشتن instance ها در متغیر بیرون از تابع، تا در unmounted بتونیم destroy کنیم
+let screenshotsSwiper = null
+
 onMounted(() => {
-  // تاخیر کوچک تا مطمئن شویم Vue رندر را تمام کرده
+  // ------- Swiper اسکرین‌شات‌ها -------
+  // این المان قطعاً رندر شده چون Vue قبل از onMounted تمام DOM رو ساخته
+  screenshotsSwiper = new Swiper('.screenshots-slider .swiper-container', {
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    loop: false, // در صورت نیاز به لوپ بی‌نهایت بعداً با احتیاط فعال کنید
+    spaceBetween: 20,
+  })
+
+  // ------- بقیه‌ی پلاگین‌های global (بدون تغییر) -------
   setTimeout(() => {
-    // WOW.js (انیمیشن‌های scroll)
     if (window.WOW) {
       new window.WOW().init()
     }
 
-    // Swiper اسلایدر اسکرین‌شات‌ها
-    if (window.Swiper) {
-      new window.Swiper('.screenshots-slider .swiper-container', {
-        slidesPerView: 'auto',
-        centeredSlides: true,
-        loop: true,
-        spaceBetween: 20,
-      })
+    if (window.jQuery && window.jQuery.fn.fancybox) {
+      window.jQuery('[data-fancybox]').fancybox()
     }
 
-    // fancybox / lity برای لینک‌های data-lity (ویدیوی پروموشن)
-    if (window.jQuery) {
-      if (window.jQuery.fn.fancybox) {
-        window.jQuery('[data-fancybox]').fancybox()
-      }
-    }
-
-    // اسکرول نرم به سکشن‌ها (data-scroll-nav) در صورتی که scrollIt لود شده باشد
     if (window.scrollIt) {
       window.scrollIt({
         topOffset: -70,
       })
     }
 
-    // مخفی کردن لودر بعد از آماده شدن صفحه
     const loading = document.getElementById('loading-wrapper')
     if (loading) loading.classList.remove('show')
   }, 100)
+})
+
+onBeforeUnmount(() => {
+  // جلوگیری از instance های duplicate در صورت hot-reload یا re-mount کامپوننت
+  if (screenshotsSwiper) {
+    screenshotsSwiper.destroy(true, true)
+    screenshotsSwiper = null
+  }
 })
 </script>
 
@@ -289,7 +291,8 @@ onMounted(() => {
           <div class="row align-items-center justify-content-between">
             <div class="col-lg-6">
               <div class="img mb-30 mb-lg-0">
-                <img src="/assets/img/about/dashboard.png" alt="" />
+                <!-- <img width="600px" height="450px" src="/assets/img/about/iii2.png" alt="" /> -->
+                 <img width="600px" height="450px" src="/assets/img/about/iIii.png" alt="" />
               </div>
             </div>
             <div class="col-lg-5">
@@ -603,7 +606,7 @@ onMounted(() => {
           </div>
         </div>
       </div>
-      <img src="/assets/img/screenshots/hand.png" alt="" class="mob-hand" />
+      <img src="/assets/img/screenshots/hand2_resized.png" alt="" class="mob-hand" />
     </div>
 
     <!-- ====== نظرات مشتریان ====== -->
@@ -694,18 +697,14 @@ onMounted(() => {
                 </div>
                 <div class="client_card">
                   <div class="user_img">
-                    <img src="/assets/img/testimonials/user6.png" alt="" />
+                    <img src="/assets/img/testimonials/SMHSST058.png" alt="" />
                   </div>
                   <div class="inf_content">
-                    <div class="stars mb-2">
-                      <i class="fas fa-star" v-for="n in 5" :key="n"></i>
-                    </div>
-                    <h6>
-                      ".هذا التطبيق جيد بجدية. إنه ببساطة، نظيف و <br />
-                      متعة حقيقية في الاستخدام."
-                    </h6>
+                    <h6>سنـسور رطوبت، شـوری و دمای خـاک</h6>
                     <p>
-                      Kerry T. <span class="text-muted">/ مصمم في <span>Teckzone Inc</span></span>
+                      سنسور رطوبت، شوری و دمای خاک یک حسگر چندمنظوره است که برای اندازه‌گیری میزان
+                      رطوبت، شوری (EC) و دمای خاک استفاده می‌شود. این اطلاعات برای پایش وضعیت خاک،
+                      مدیریت آبیاری و بررسی شرایط رشد گیاه کاربرد دارد.
                     </p>
                   </div>
                 </div>
@@ -1265,8 +1264,8 @@ onMounted(() => {
 }
 
 .clients .client-item img {
-  width: 70px;
-  height: 70px;
+  width: 600px;
+  height: 450px;
   object-fit: contain;
 }
 
