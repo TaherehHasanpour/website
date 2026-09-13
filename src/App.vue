@@ -1,6 +1,8 @@
 <script setup>
-import { onMounted, onBeforeUnmount, ref } from 'vue'
+import { ref, onMounted, onBeforeUnmount } from 'vue'
 import Footer from './components/layout/Footer.vue'
+
+// اگر Swiper را npm نصب کرده‌ای:
 // import Swiper from 'swiper/bundle'
 // import 'swiper/css/bundle'
 
@@ -22,20 +24,39 @@ const bannerItems = ref([
   },
 ])
 
-// نگه‌داشتن instance ها در متغیر بیرون از تابع، تا در unmounted بتونیم destroy کنیم
 let screenshotsSwiper = null
 
+// --------------------
+// Navbar Scroll
+// --------------------
+const handleScroll = () => {
+  const nav = document.getElementById('main-nav')
+
+  if (!nav) return
+
+  if (window.scrollY > 50) {
+    nav.classList.add('scrolled')
+  } else {
+    nav.classList.remove('scrolled')
+  }
+}
+
+// --------------------
+// Mounted
+// --------------------
 onMounted(() => {
-  // ------- Swiper اسکرین‌شات‌ها -------
-  // این المان قطعاً رندر شده چون Vue قبل از onMounted تمام DOM رو ساخته
+  // ------- Swiper -------
   screenshotsSwiper = new Swiper('.screenshots-slider .swiper-container', {
     slidesPerView: 'auto',
     centeredSlides: true,
-    loop: false, // در صورت نیاز به لوپ بی‌نهایت بعداً با احتیاط فعال کنید
+    loop: false,
     spaceBetween: 20,
   })
 
-  // ------- بقیه‌ی پلاگین‌های global (بدون تغییر) -------
+  // ------- Navbar -------
+  window.addEventListener('scroll', handleScroll)
+
+  // ------- Global Plugins -------
   setTimeout(() => {
     if (window.WOW) {
       new window.WOW().init()
@@ -52,12 +73,21 @@ onMounted(() => {
     }
 
     const loading = document.getElementById('loading-wrapper')
-    if (loading) loading.classList.remove('show')
+
+    if (loading) {
+      loading.classList.remove('show')
+    }
   }, 100)
 })
 
+// --------------------
+// Before Unmount
+// --------------------
 onBeforeUnmount(() => {
-  // جلوگیری از instance های duplicate در صورت hot-reload یا re-mount کامپوننت
+  // حذف Scroll Listener
+  window.removeEventListener('scroll', handleScroll)
+
+  // Destroy کردن Swiper
   if (screenshotsSwiper) {
     screenshotsSwiper.destroy(true, true)
     screenshotsSwiper = null
@@ -74,105 +104,133 @@ onBeforeUnmount(() => {
     </div>
   </div>
 
-  <!-- ====== نوار بالای هدر ====== -->
-  <div class="top-navbar style-4">
-    <div class="container">
-      <div class="content text-white"></div>
-    </div>
-  </div>
+  <div class="hero-wrapper style-4">
+    <img src="/assets/img/gifs/22.gif" alt="" class="hero-gif" />
+    <div class="hero-overlay"></div>
 
-  <!-- ====== نویگیشن ====== -->
-  <nav class="navbar navbar-expand-lg navbar-light style-4" id="main-nav">
-    <div class="container">
-      <a class="navbar-brand" href="#" data-scroll-nav="0">
-        <img src="/assets/img/logos/atey_logo.png" alt="" />
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav m-auto mb-2 mb-lg-0 text-uppercase">
-          <li class="nav-item">
-            <a class="nav-link" href="#0" data-scroll-nav="1">خدمات</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#0" data-scroll-nav="2">درباره ما</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#0" data-scroll-nav="3">ویژگی ها</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#0" data-scroll-nav="4">نرم افزار ها</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#0" data-scroll-nav="5">سنسور ها</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#0" data-scroll-nav="6">تاییدیه ها</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#0" data-scroll-nav="7">پرسش و پاسخ</a>
-          </li>
-        </ul>
-        <div class="nav-side">
-          <div class="d-flex align-items-center">
-            <!-- <a
+    <!-- ====== نوار بالای هدر ====== -->
+    <div class="top-navbar style-4">
+      <div class="container">
+        <div class="content"></div>
+      </div>
+    </div>
+
+    <!-- ====== نویگیشن ====== -->
+    <nav class="navbar navbar-expand-lg navbar-light style-4" id="main-nav">
+      <!-- <img src="/assets/img/gifs/converted.gif" alt="image" /> -->
+      <div class="container">
+        <a class="navbar-brand" href="#" data-scroll-nav="0">
+          <img src="/assets/img/logos/atey_logo.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0 text-uppercase">
+            <li class="nav-item">
+              <a class="nav-link" href="#0" data-scroll-nav="1">خدمات</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#0" data-scroll-nav="2">درباره ما</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#0" data-scroll-nav="3">ویژگی ها</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#0" data-scroll-nav="4">نرم افزار ها</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#0" data-scroll-nav="5">سنسور ها</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#0" data-scroll-nav="6">تاییدیه ها</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#0" data-scroll-nav="7">پرسش و پاسخ</a>
+            </li>
+          </ul>
+          <div class="nav-side">
+            <div class="d-flex align-items-center">
+              <!-- <a
               href="#0"
               class="btn rounded-pill brd-gray hover-blue4 sm-butn fw-bold"
               data-scroll-nav="8"
             >
               <span>تحميل <i class="bi bi-download ms-1"></i></span>
             </a> -->
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- ====== هدر ====== -->
-  <header class="style-4" data-scroll-index="0">
-    <div class="content">
-      <div class="container">
-        <div class="row gx-0">
-          <div class="col-lg-6">
-            <div class="info">
-              <h1 class="mb-30">شرکت <span>آتــــــی</span></h1>
-              <p class="text">شرکت دانش بنیان پایدار تجهیز آتی خراسان</p>
+    <!-- ====== هدر ====== -->
+    <header class="style-4" data-scroll-index="0">
+      <div class="content">
+        <div class="container">
+          <div class="row gx-0">
+            <div class="col-lg-6">
+              <div class="info">
+                <h1 class="mb-30">شرکت آتــــــی</h1>
+                <p class="text">شرکت دانش بنیان پایدار تجهیز آتی خراسان</p>
 
-              <div class="used_app w-100" style="margin-bottom: 40px">
-                <ul>
-                  <li v-for="item in bannerItems" class="tooltipParent bg-white p-1">
-                    <a :href="item.link" target="_blank">
-                      <img :src="item.img" alt="image" />
-                      <span class="tooltiptext">{{ item.title }}</span>
-                    </a>
-                  </li>
-                </ul>
+                <div class="used_app w-100" style="margin-bottom: 40px">
+                  <ul>
+                    <li v-for="item in bannerItems" class="tooltipParent bg-white p-1">
+                      <a :href="item.link" target="_blank">
+                        <img :src="item.img" alt="image" />
+                        <span class="tooltiptext">{{ item.title }}</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="img">
+                <img src="/assets/img/header/header_42.png" class="invisible-img" alt="" />
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="img">
-              <img src="/assets/img/header/header_42.png" alt="" />
-            </div>
-          </div>
         </div>
+        <img src="/assets/img/header/header_4_bubble.png" alt="" class="bubble" />
       </div>
-      <img src="/assets/img/header/header_4_bubble.png" alt="" class="bubble" />
-    </div>
-
-    <div class="wave-wrap">
-      <img src="/assets/img/header/header_4_wave.png" alt="" class="wave" />
-    </div>
-  </header>
+      <!-- <div class="wave-wrap">
+        <img src="/assets/img/header/header_4_wave.png" alt="" class="wave" />
+      </div> -->
+      <div>
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="#023e8a" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="#00b4d8" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="#90e0ef" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#f6f4fe" />
+          </g>
+        </svg>
+      </div>
+    </header>
+  </div>
 
   <main>
     <!-- ====== کلاینت‌ها ====== -->
@@ -292,7 +350,7 @@ onBeforeUnmount(() => {
             <div class="col-lg-6">
               <div class="img mb-30 mb-lg-0">
                 <!-- <img width="600px" height="450px" src="/assets/img/about/iii2.png" alt="" /> -->
-                 <img width="600px" height="450px" src="/assets/img/about/iIii.png" alt="" />
+                <img class="about-image" src="/assets/img/about/iIii.png" alt="" />
               </div>
             </div>
             <div class="col-lg-5">
@@ -598,7 +656,7 @@ onBeforeUnmount(() => {
       <div class="screenshots-slider style-4">
         <div class="swiper-container">
           <div class="swiper-wrapper">
-            <div class="swiper-slide" v-for="n in 10" :key="n">
+            <div class="swiper-slide" v-for="n in 10" :key="n" style="width: 267px; height: 498px">
               <div class="img">
                 <img :src="`/assets/img/screenshots/${n}.png`" alt="" />
               </div>
@@ -1155,6 +1213,36 @@ onBeforeUnmount(() => {
   </a>
 </template>
 <style lang="css" scoped>
+.hero-wrapper {
+  position: relative;
+  overflow: hidden;
+
+}
+
+.hero-gif {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(1, 48, 90, 0.55); /* رنگ و شفافیت رو خودت تنظیم کن */
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-wrapper > .top-navbar,
+.hero-wrapper > #main-nav,
+.hero-wrapper > header.style-4 {
+  position: relative;
+  z-index: 2;
+}
 .clients.style-4 .client-name {
   text-align: center;
   margin: 12px 0 0;
@@ -1260,12 +1348,12 @@ onBeforeUnmount(() => {
   display: flex !important;
   align-items: center;
   justify-content: center;
-  height: 90px;
+  /* height: 90px; */
 }
 
 .clients .client-item img {
-  width: 600px;
-  height: 450px;
+  width: 100px;
+  height: 50px;
   object-fit: contain;
 }
 
@@ -1552,6 +1640,103 @@ onBeforeUnmount(() => {
     font-size: 12px;
     top: 110%;
     white-space: normal;
+  }
+}
+.hero-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-gif {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(1, 48, 90, 0.55); /* رنگ و شفافیت رو خودت تنظیم کن */
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-wrapper > .top-navbar,
+.hero-wrapper > #main-nav,
+.hero-wrapper > header.style-4 {
+  position: relative;
+  z-index: 2;
+}
+
+.invisible-img {
+  visibility: hidden;
+}
+.invisible-img {
+  opacity: 0;
+}
+
+#main-nav {
+  background: rgba(255, 255, 255, 0.6) !important;
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+
+  color: white;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* وقتی اسکرول شده */
+#main-nav.scrolled {
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.95) !important;
+  color: #000;
+
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+
+  border-color: rgba(0, 0, 0, 0.08);
+
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* متن منو */
+#main-nav .nav-link {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+#main-nav.scrolled .nav-link {
+  color: #000;
+}
+
+/* اگر لوگو هم نیاز به تغییر داشت */
+#main-nav.scrolled .navbar-brand img {
+  /* در صورت نیاز */
+}
+
+.about-image {
+  width: 600px;
+  height: 450px;
+}
+
+/* موبایل */
+@media (max-width: 768px) {
+  .about-image {
+    width: 300px;
+    height: 225px;
   }
 }
 </style>

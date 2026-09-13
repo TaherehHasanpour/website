@@ -2503,7 +2503,7 @@ small.text {
 
 /* --------------- top navbar style-4 --------------- */
 .top-navbar.style-4 {
-  background-image: url(../img/top_nav_s4.png);
+  /* background-image: url(../img/top_nav_s4.png); */
   background-size: cover;
   background-position: top;
   padding: 10px 15px 50px;
@@ -3046,9 +3046,12 @@ small.text {
   z-index: 99;
   padding: 20px 15px;
   background-color: #fff;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-radius: 20px;
+  /* border-top-left-radius: 20px;
+  border-top-right-radius: 20px; */
   margin-top: -38px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .navbar.style-4 .navbar-brand {
   width: 150px;
@@ -3057,7 +3060,7 @@ small.text {
 }
 .navbar.style-4 .navbar-nav .nav-item .nav-link {
   position: relative;
-  color: #000;
+  color: white;
   font-size: 12px;
   font-weight: bold;
   margin: 0 15px;
@@ -3891,6 +3894,7 @@ header.style-3 .content .info .form-group.input-with-icon .input-icon {
 header.style-4 {
   position: relative;
   padding: 60px 0;
+  height: 850px;
 }
 header.style-4 .content {
   position: relative;
@@ -3906,7 +3910,7 @@ header.style-4 .content .info .title_small {
 header.style-4 .content .info h1 {
   font-size: 52px;
   line-height: 60px;
-  color: #000;
+  color: white;
 }
 header.style-4 .content .info h1 span {
   -webkit-background-clip: text;
@@ -3942,7 +3946,7 @@ header.style-4 .content .info h1 span {
   );
 }
 header.style-4 .content .info .text {
-  color: #666;
+  color: #f0efef;
   font-size: 15px;
 }
 header.style-4 .content .info .play-btn {
@@ -3996,6 +4000,8 @@ header.style-4 .wave {
   object-position: top;
   z-index: 20;
 }
+
+
 
 header.style-5 {
   position: relative;
@@ -11908,8 +11914,8 @@ header.style-16 .screen-img .diamond {
 }
 .screenshots.style-4 .screenshots-slider .img {
   margin: 0 auto;
-  height: 420px;
-  width: 190px;
+  height: 440px;
+  width: 240px;
 }
 .screenshots.style-4 .screenshots-slider .img img {
   width: 100%;
@@ -11921,7 +11927,7 @@ header.style-16 .screen-img .diamond {
 .screenshots.style-4 .mob-hand {
   pointer-events: none;
   position: absolute;
-  left: 50%;
+  left: 49%;
   bottom: 0;
   -webkit-transform: translateX(-33%);
   -ms-transform: translateX(-33%);

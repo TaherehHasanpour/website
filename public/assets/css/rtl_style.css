@@ -23,6 +23,7 @@ p {
   font-size: 18px; }
 
 .navbar.style-6 .nav-item .nav-link {
+  color: white;
   font-size: 13px; }
   .navbar.style-6 .nav-item .nav-link::after {
     right: auto;
