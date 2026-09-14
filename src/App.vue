@@ -177,7 +177,7 @@ onBeforeUnmount(() => {
     <header class="style-4" data-scroll-index="0">
       <div class="content">
         <div class="container">
-          <div class="row gx-0">
+          <div class="row gx-0" style="margin-top: 160px">
             <div class="col-lg-6">
               <div class="info">
                 <h1 class="mb-30">شرکت آتــــــی</h1>
@@ -516,7 +516,7 @@ onBeforeUnmount(() => {
     <section class="clients style-4">
       <div class="container">
         <div class="text-center">
-          <h5 class="fw-bold mb-30 pt-20">شرکت‌هایی که افتخار همکاری داشتیم</h5>
+          <h5 class="fw-bold mb-30 pt-30 pb-20">شرکت‌هایی که افتخار همکاری داشتیم</h5>
         </div>
 
         <div class="client-logos pb-30">
@@ -1515,8 +1515,8 @@ onBeforeUnmount(() => {
   width: 80px;
   height: 80px;
   border-radius: 100%;
-  border: 4px solid #01305a;
-  background-color: #fff;
+  border: 4px solid #d0e9ff;
+  background-color: #ffffffab;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1709,9 +1709,4 @@ onBeforeUnmount(() => {
     height: 225px;
   }
 }
-
-
-
-
-
 </style>
