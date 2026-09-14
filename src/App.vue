@@ -137,14 +137,15 @@ onBeforeUnmount(() => {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav m-auto mb-2 mb-lg-0 text-uppercase">
             <li class="nav-item">
-              <a class="nav-link" href="#0" data-scroll-nav="1">خدمات</a>
+              <a class="nav-link" href="#0" data-scroll-nav="1">درباره ما</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#0" data-scroll-nav="2">درباره ما</a>
+              <a class="nav-link" href="#0" data-scroll-nav="2">ویژگی ها</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#0" data-scroll-nav="3">ویژگی ها</a>
+              <a class="nav-link" href="#0" data-scroll-nav="3">خدمات</a>
             </li>
+
             <li class="nav-item">
               <a class="nav-link" href="#0" data-scroll-nav="4">نرم افزار ها</a>
             </li>
@@ -156,6 +157,9 @@ onBeforeUnmount(() => {
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#0" data-scroll-nav="7">پرسش و پاسخ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#0" data-scroll-nav="8">ارتباط با ما</a>
             </li>
           </ul>
           <div class="nav-side">
@@ -180,10 +184,10 @@ onBeforeUnmount(() => {
           <div class="row gx-0" style="margin-top: 160px">
             <div class="col-lg-6">
               <div class="info">
-                <h1 class="mb-30">شرکت آتــــــی</h1>
+                <h1 class="mb-30">آتـــــــــی</h1>
                 <p class="text">شرکت دانش بنیان پایدار تجهیز آتی خراسان</p>
 
-                <div class="used_app w-100" style="margin-bottom: 40px">
+                <!-- <div class="used_app w-100" style="margin-bottom: 40px">
                   <ul>
                     <li v-for="item in bannerItems" class="tooltipParent bg-white p-1">
                       <a :href="item.link" target="_blank">
@@ -192,7 +196,7 @@ onBeforeUnmount(() => {
                       </a>
                     </li>
                   </ul>
-                </div>
+                </div> -->
               </div>
             </div>
             <!-- <div class="col-lg-6">
@@ -236,7 +240,7 @@ onBeforeUnmount(() => {
   <main>
     <!-- ====== درباره‌ی ما ====== -->
     <section class="about section-padding style-4">
-      <div class="content frs-content" id="about" data-scroll-index="2">
+      <div class="content frs-content" id="about" data-scroll-index="1">
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-lg-6">
@@ -301,7 +305,7 @@ onBeforeUnmount(() => {
         <img src="/assets/img/about/about_s4_bubble.png" alt="" class="bubble" />
       </div>
 
-      <div class="content sec-content" data-scroll-index="3">
+      <div class="content sec-content" data-scroll-index="2">
         <div class="container">
           <div class="row align-items-center justify-content-between">
             <div class="col-lg-5 order-2 order-lg-0">
@@ -554,7 +558,7 @@ onBeforeUnmount(() => {
     </section>
 
     <!-- ====== ویژگی‌ها ====== -->
-    <section class="features pt-70 pb-70 style-4" data-scroll-index="1">
+    <section class="features pt-70 pb-70 style-4" data-scroll-index="3">
       <div class="container">
         <div class="section-head text-center style-4">
           <!-- <small class="title_small bg-white">نوتيرو - تطبيق مذكرة سهل الاستخدام</small> -->
@@ -1173,7 +1177,7 @@ onBeforeUnmount(() => {
     </section>
   </main>
 
-  <Footer></Footer>
+  <Footer data-scroll-index="8"></Footer>
   <!-- ====== دکمه‌ی بازگشت به بالا ====== -->
   <a
     href="#"
@@ -1686,6 +1690,7 @@ onBeforeUnmount(() => {
 #main-nav .nav-link {
   color: white;
   transition: color 0.3s ease;
+  font-size: 13px;
 }
 
 #main-nav.scrolled .nav-link {

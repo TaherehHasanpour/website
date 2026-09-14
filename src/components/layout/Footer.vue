@@ -26,7 +26,12 @@
 
               <div class="company-info mt-20">
                 <div class="info-item">
-                  <i class="fa-solid fa-location-dot"></i>
+                  <img
+                    width="20px"
+                    height="20px"
+                    src="/public/assets/img/icons/svg/location-dot.svg"
+                    alt=""
+                  />
                   <span>مشهد، پارک علم و فناوری خراسان</span>
                 </div>
 
@@ -41,31 +46,23 @@
           <!-- Useful Links -->
           <div class="col-lg-4 col-md-6">
             <div class="footer-links">
-              <h5 class="footer-title">لینک‌های مفید</h5>
+              <h5 class="footer-title">محصولات نرم افزاری</h5>
 
               <ul>
                 <li>
-                  <a href="https://president.ir/fa" target="_blank" rel="noopener noreferrer">
-                    دفتر ریاست محترم جمهوری
+                  <a href="https://simmab.ir/" target="_blank" rel="noopener noreferrer">
+                    سیــــماب
                   </a>
                 </li>
 
                 <li>
-                  <a href="https://moe.gov.ir/" target="_blank" rel="noopener noreferrer">
-                    وزارت نیرو
+                  <a href="https://gashtab.ir/" target="_blank" rel="noopener noreferrer">
+                    گشتــــاب
                   </a>
                 </li>
 
                 <li>
-                  <a href="https://www.wrm.ir/" target="_blank" rel="noopener noreferrer">
-                    شرکت مدیریت منابع آب ایران
-                  </a>
-                </li>
-
-                <li>
-                  <a href="https://data.wrm.ir/" target="_blank" rel="noopener noreferrer">
-                    دفتر داده و اطلاعات منابع آب
-                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer"> آبـــان </a>
                 </li>
               </ul>
             </div>
@@ -77,7 +74,12 @@
               <h5 class="footer-title">ارتباط با ما</h5>
 
               <div class="contact-item">
-                <i class="fas fa-envelope"></i>
+                <img
+                  width="20px"
+                  height="20px"
+                  src="/public/assets/img/icons/svg/envelope.svg"
+                  alt=""
+                />
 
                 <div>
                   <small>پست الکترونیکی</small>
@@ -86,7 +88,12 @@
               </div>
 
               <div class="contact-item">
-                <i class="fas fa-phone"></i>
+                <img
+                  width="20px"
+                  height="20px"
+                  src="/public/assets/img/icons/svg/phone.svg"
+                  alt=""
+                />
 
                 <div>
                   <small>تلفن تماس</small>
@@ -97,11 +104,21 @@
               <!-- Social Media -->
               <div class="footer-social mt-25">
                 <a href="https://atey.ir" target="_blank" rel="noopener noreferrer" title="وب‌سایت">
-                  <i class="fas fa-globe"></i>
+                  <img
+                    width="20px"
+                    height="20px"
+                    src="/public/assets/img/icons/svg/internet-explorer.svg"
+                    alt=""
+                  />
                 </a>
 
                 <a href="#" target="_blank" rel="noopener noreferrer" title="تلگرام">
-                  <i class="fab fa-telegram-plane"></i>
+                  <img
+                    width="20px"
+                    height="20px"
+                    src="/public/assets/img/icons/svg/telegram.svg"
+                    alt=""
+                  />
                 </a>
 
                 <a
@@ -110,11 +127,19 @@
                   rel="noopener noreferrer"
                   title="اینستاگرام"
                 >
-                  <i class="fab fa-instagram"></i>
+                  <img
+                    width="20px"
+                    height="20px"
+                    src="/public/assets/img/icons/svg/instagram.svg"
+                    alt=""
+                  />
                 </a>
 
-                <a href="tel:05135419795" title="تماس">
-                  <i class="fas fa-phone"></i>
+                <a href="tel:05135419795" title="توییتر">
+                  <img width="20px" height="20px" src="/public/assets/img/icons/svg/x.svg" alt="" />
+                </a>
+                <a href="tel:05135419795" title="لینکدین">
+                  <img width="20px" height="20px" src="/public/assets/img/icons/svg/x.svg" alt="" />
                 </a>
               </div>
             </div>
