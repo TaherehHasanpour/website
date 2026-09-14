@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import './_fonts.scss';
 /*
 Theme Name: Iteck     
 Theme URI: https://themeforest.net/
@@ -118,8 +119,14 @@ TABLE OF CONTENTS:-
   ========================= */
 
   --color-main-grad: linear-gradient(to right, #023e8a 0%, #01305a 100%);
-}
 
+  --bs-font-sans-serif: 'IRANSans', sans-serif;
+}
+.fa,
+.fas {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+}
 .color-main {
   color: var(--color-main) !important;
 }
@@ -492,7 +499,8 @@ html::-webkit-scrollbar-corner {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  /* direction: rtl; */
+  font-family: var(--bs-font-sans-serif);
   text-decoration: none;
   font-size: 0.9em;
   overflow-x: hidden;
@@ -4000,8 +4008,6 @@ header.style-4 .wave {
   object-position: top;
   z-index: 20;
 }
-
-
 
 header.style-5 {
   position: relative;
@@ -12136,7 +12142,7 @@ header.style-16 .screen-img .diamond {
 }
 .features.style-4 .content .features-card h6 {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 12px;
   line-height: 23px;
 }
 

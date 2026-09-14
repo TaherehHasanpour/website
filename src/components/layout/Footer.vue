@@ -17,7 +17,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="footer-company">
               <div class="logo mb-20">
-                  <img src="/assets/img/logos/atey_logo.png" alt="" />
+                <img src="/assets/img/logos/atey_logo.png" alt="" />
               </div>
 
               <h5>پایدار تجهیز آتی خراسان</h5>
@@ -26,7 +26,7 @@
 
               <div class="company-info mt-20">
                 <div class="info-item">
-                  <i class="icofont-location-pin"></i>
+                  <i class="fa-solid fa-location-dot"></i>
                   <span>مشهد، پارک علم و فناوری خراسان</span>
                 </div>
 
@@ -325,6 +325,8 @@
 
   .style-4 .footer-title {
     text-align: center;
+    padding: 10px;
+    margin: 0;
   }
 
   .style-4 .foot {

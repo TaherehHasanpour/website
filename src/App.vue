@@ -23,7 +23,7 @@ const bannerItems = ref([
     link: '#',
   },
 ])
-
+const navLogo = ref('/assets/img/logos/atey_logo2.png')
 let screenshotsSwiper = null
 
 // --------------------
@@ -31,13 +31,14 @@ let screenshotsSwiper = null
 // --------------------
 const handleScroll = () => {
   const nav = document.getElementById('main-nav')
-
   if (!nav) return
 
   if (window.scrollY > 50) {
     nav.classList.add('scrolled')
+    navLogo.value = '/assets/img/logos/atey_logo.png'
   } else {
     nav.classList.remove('scrolled')
+    navLogo.value = '/assets/img/logos/atey_logo2.png'
   }
 }
 
@@ -120,7 +121,7 @@ onBeforeUnmount(() => {
       <!-- <img src="/assets/img/gifs/converted.gif" alt="image" /> -->
       <div class="container">
         <a class="navbar-brand" href="#" data-scroll-nav="0">
-          <img src="/assets/img/logos/atey_logo.png" alt="" />
+          <img :src="navLogo" alt="ATEY Logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -194,154 +195,45 @@ onBeforeUnmount(() => {
                 </div>
               </div>
             </div>
-            <div class="col-lg-6">
+            <!-- <div class="col-lg-6">
               <div class="img">
                 <img src="/assets/img/header/header_42.png" class="invisible-img" alt="" />
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
-        <img src="/assets/img/header/header_4_bubble.png" alt="" class="bubble" />
+        <!-- <img src="/assets/img/header/header_4_bubble.png" alt="" class="bubble" /> -->
       </div>
       <!-- <div class="wave-wrap">
         <img src="/assets/img/header/header_4_wave.png" alt="" class="wave" />
       </div> -->
-      <div>
-        <svg
-          class="waves"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 24 150 28"
-          preserveAspectRatio="none"
-          shape-rendering="auto"
-        >
-          <defs>
-            <path
-              id="gentle-wave"
-              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-            />
-          </defs>
-          <g class="parallax">
-            <use xlink:href="#gentle-wave" x="48" y="0" fill="#023e8a" />
-            <use xlink:href="#gentle-wave" x="48" y="3" fill="#00b4d8" />
-            <use xlink:href="#gentle-wave" x="48" y="5" fill="#90e0ef" />
-            <use xlink:href="#gentle-wave" x="48" y="7" fill="#f6f4fe" />
-          </g>
-        </svg>
-      </div>
     </header>
+    <div>
+      <svg
+        class="waves"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+        shape-rendering="auto"
+      >
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+          />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="#023e8a" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="#00b4d8" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="#90e0ef" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+      </svg>
+    </div>
   </div>
 
   <main>
-    <!-- ====== کلاینت‌ها ====== -->
-    <section class="clients style-4">
-      <div class="container">
-        <div class="text-center">
-          <h5 class="fw-bold mb-60">شرکت‌هایی که افتخار همکاری داشتیم</h5>
-        </div>
-
-        <div class="client-logos pb-70">
-          <div class="clients-scroll">
-            <div class="client-item">
-              <a href="#" class="img d-block">
-                <img src="/assets/img/icons/abmantaghei.png" alt="" />
-              </a>
-              <p class="client-name">آب منطقه‌ای خراسان رضوی</p>
-            </div>
-
-            <div class="client-item">
-              <a href="#" class="img d-block">
-                <img src="/assets/img/icons/abmantaghei.png" alt="" />
-              </a>
-              <p class="client-name">آب منطقه‌ای خراسان شمالی</p>
-            </div>
-
-            <div class="client-item">
-              <a href="#" class="img d-block">
-                <img src="/assets/img/icons/abmantaghei.png" alt="" />
-              </a>
-              <p class="client-name">آب منطقه‌ای اصفهان</p>
-            </div>
-
-            <div class="client-item">
-              <a href="#" class="img d-block">
-                <img src="/assets/img/icons/abmantaghei.png" alt="" />
-              </a>
-              <p class="client-name">مدیریت منابع آب ایران</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ====== ویژگی‌ها ====== -->
-    <section class="features pt-70 pb-70 style-4" data-scroll-index="1">
-      <div class="container">
-        <div class="section-head text-center style-4">
-          <!-- <small class="title_small bg-white">نوتيرو - تطبيق مذكرة سهل الاستخدام</small> -->
-          <h2 class="mb-70">خدمات <span>ارئه</span>میدیم</h2>
-        </div>
-        <div class="content features-content">
-          <div class="features-card">
-            <div class="icon img-contain">
-              <img src="/assets/img/icons/fe/22.jpg" alt="" />
-            </div>
-            <h6>طراحی و توسعه سامانه‌های برخط</h6>
-          </div>
-
-          <div class="features-card">
-            <div class="icon img-contain">
-              <img src="/assets/img/icons/fe/1.jpg" alt="" />
-            </div>
-            <h6>تحلیل داده‌های کلان و ژئودیتا</h6>
-          </div>
-
-          <div class="features-card">
-            <div class="icon img-contain">
-              <img src="/assets/img/icons/fe/2.jpg" alt="" />
-              <!-- <span
-                class="label icon-40 alert-success text-success rounded-circle small text-uppercase fw-bold"
-              >
-                جديد
-              </span> -->
-            </div>
-            <h6>توسعه اپلیکیشن‌های اندروید و IOS</h6>
-          </div>
-
-          <div class="features-card">
-            <div class="icon img-contain">
-              <img src="/assets/img/icons/fe/5.png" alt="" />
-            </div>
-            <h6>طراحی و ساخت سنسورهای هواشناسی</h6>
-          </div>
-
-          <div class="features-card">
-            <div class="icon img-contain">
-              <img src="/assets/img/icons/fe/4.jpg" alt="" />
-            </div>
-            <h6>طراحی و ساخت دیتالاگر و ادوات الکترونیکی</h6>
-          </div>
-
-          <!-- کارت 6 -->
-          <div class="features-card">
-            <div class="icon img-contain">
-              <img src="/assets/img/icons/fe/6.jpg" alt="" />
-            </div>
-            <h6>طراحی و ساخت ایستگاه های خودکار هواشناسی</h6>
-          </div>
-
-          <!-- کارت 7 -->
-          <div class="features-card">
-            <div class="icon img-contain">
-              <img src="/assets/img/icons/fe/7.png" alt="" />
-            </div>
-            <h6>اینترنت اشیاء</h6>
-          </div>
-        </div>
-      </div>
-      <img src="/assets/img/feat_circle.png" alt="" class="img-circle" />
-    </section>
-
     <!-- ====== درباره‌ی ما ====== -->
     <section class="about section-padding style-4">
       <div class="content frs-content" id="about" data-scroll-index="2">
@@ -619,36 +511,114 @@ onBeforeUnmount(() => {
         </div>
         <img src="/assets/img/about/about_s4_bubble.png" alt="" class="bubble" />
       </div>
-
-      <!-- <div class="integration pt-60">
-        <div class="section-head text-center style-4">
-          <small class="title_small">دفعة لمرة واحدة</small>
-          <h2 class="mb-20">متوافق مع <span>التطبيقات الشعبية</span></h2>
-          <p>نوتيرو يتكامل مع التطبيقات الشعبية. تساعدك على التواصل والتعاون بسهولة</p>
+    </section>
+    <!-- ====== کلاینت‌ها ====== -->
+    <section class="clients style-4">
+      <div class="container">
+        <div class="text-center">
+          <h5 class="fw-bold mb-30 pt-20">شرکت‌هایی که افتخار همکاری داشتیم</h5>
         </div>
-        <div class="container">
-          <div class="content">
-            <div class="img">
-              <img src="/assets/img/about/intg1.png" alt="" class="mt-30" />
+
+        <div class="client-logos pb-30">
+          <div class="clients-scroll">
+            <div class="client-item">
+              <a href="#" class="img d-block">
+                <img src="/assets/img/icons/abmantaghei.png" alt="" />
+              </a>
+              <p class="client-name">آب منطقه‌ای خراسان رضوی</p>
             </div>
-            <div class="img">
-              <img src="/assets/img/about/intg5.png" alt="" class="mt-60" />
+
+            <div class="client-item">
+              <a href="#" class="img d-block">
+                <img src="/assets/img/icons/abmantaghei.png" alt="" />
+              </a>
+              <p class="client-name">آب منطقه‌ای خراسان شمالی</p>
             </div>
-            <div class="img">
-              <img src="/assets/img/about/intg4.png" alt="" class="mt-20" />
+
+            <div class="client-item">
+              <a href="#" class="img d-block">
+                <img src="/assets/img/icons/abmantaghei.png" alt="" />
+              </a>
+              <p class="client-name">آب منطقه‌ای اصفهان</p>
             </div>
-            <div class="img">
-              <img src="/assets/img/about/intg3.png" alt="" class="mt-80" />
-            </div>
-            <div class="img">
-              <img src="/assets/img/about/intg2.png" alt="" />
+
+            <div class="client-item">
+              <a href="#" class="img d-block">
+                <img src="/assets/img/icons/abmantaghei.png" alt="" />
+              </a>
+              <p class="client-name">مدیریت منابع آب ایران</p>
             </div>
           </div>
         </div>
-        <img src="/assets/img/about/intg_back.png" alt="" class="intg-back" />
       </div>
-      <img src="/assets/img/about/about_s4_wave.png" alt="" class="top-wave" />
-      <img src="/assets/img/about/about_s4_wave.png" alt="" class="bottom-wave" /> -->
+    </section>
+
+    <!-- ====== ویژگی‌ها ====== -->
+    <section class="features pt-70 pb-70 style-4" data-scroll-index="1">
+      <div class="container">
+        <div class="section-head text-center style-4">
+          <!-- <small class="title_small bg-white">نوتيرو - تطبيق مذكرة سهل الاستخدام</small> -->
+          <h2 class="mb-70">خدمات <span>ارئه</span>میدیم</h2>
+        </div>
+        <div class="content features-content">
+          <div class="features-card">
+            <div class="icon img-contain">
+              <img src="/assets/img/icons/fe/22.jpg" alt="" />
+            </div>
+            <h6>طراحی و توسعه سامانه‌های برخط</h6>
+          </div>
+
+          <div class="features-card">
+            <div class="icon img-contain">
+              <img src="/assets/img/icons/fe/1.jpg" alt="" />
+            </div>
+            <h6>تحلیل داده‌های کلان و ژئودیتا</h6>
+          </div>
+
+          <div class="features-card">
+            <div class="icon img-contain">
+              <img src="/assets/img/icons/fe/2.jpg" alt="" />
+              <!-- <span
+                class="label icon-40 alert-success text-success rounded-circle small text-uppercase fw-bold"
+              >
+                جديد
+              </span> -->
+            </div>
+            <h6>توسعه اپلیکیشن‌های اندروید و IOS</h6>
+          </div>
+
+          <div class="features-card">
+            <div class="icon img-contain">
+              <img src="/assets/img/icons/fe/5.png" alt="" />
+            </div>
+            <h6>طراحی و ساخت سنسورهای هواشناسی</h6>
+          </div>
+
+          <div class="features-card">
+            <div class="icon img-contain">
+              <img src="/assets/img/icons/fe/4.jpg" alt="" />
+            </div>
+            <h6>طراحی و ساخت دیتالاگر و ادوات الکترونیکی</h6>
+          </div>
+
+          <!-- کارت 6 -->
+          <div class="features-card">
+            <div class="icon img-contain">
+              <img src="/assets/img/icons/fe/6.jpg" alt="" />
+            </div>
+            <h6>طراحی و ساخت ایستگاه های خودکار هواشناسی</h6>
+          </div>
+
+          <!-- کارت 7 -->
+          <div class="features-card">
+            <div class="icon img-contain">
+              <img src="/assets/img/icons/fe/7.png" alt="" />
+            </div>
+            <h6>اینترنت اشیاء</h6>
+          </div>
+        </div>
+      </div>
+      <img src="/assets/img/feat_circle.png" alt="" class="img-circle" />
     </section>
 
     <!-- ====== اسکرین‌شات‌ها ====== -->
@@ -1216,7 +1186,6 @@ onBeforeUnmount(() => {
 .hero-wrapper {
   position: relative;
   overflow: hidden;
-
 }
 
 .hero-gif {
@@ -1232,11 +1201,10 @@ onBeforeUnmount(() => {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(1, 48, 90, 0.55); /* رنگ و شفافیت رو خودت تنظیم کن */
+  background: rgba(244, 251, 255, 0.08);
   z-index: 1;
   pointer-events: none;
 }
-
 .hero-wrapper > .top-navbar,
 .hero-wrapper > #main-nav,
 .hero-wrapper > header.style-4 {
@@ -1680,17 +1648,19 @@ onBeforeUnmount(() => {
 }
 
 #main-nav {
-  background: rgba(255, 255, 255, 0.6) !important;
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  color: #fff;
 
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.06));
+
+  backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 14px;
 
   box-shadow:
-    0 8px 32px rgba(0, 0, 0, 0.05),
-    inset 0 1px 0 rgba(255, 255, 255, 0.3);
-
-  color: white;
+    0 8px 32px rgba(0, 0, 0, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
 
   transition:
     background 0.3s ease,
@@ -1739,4 +1709,9 @@ onBeforeUnmount(() => {
     height: 225px;
   }
 }
+
+
+
+
+
 </style>
