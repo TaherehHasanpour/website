@@ -124,8 +124,8 @@ TABLE OF CONTENTS:-
 }
 .fa,
 .fas {
-    font-family: "Font Awesome 5 Pro";
-    font-weight: 900;
+  font-family: 'Font Awesome 5 Pro';
+  font-weight: 900;
 }
 .color-main {
   color: var(--color-main) !important;
@@ -21092,9 +21092,12 @@ footer.style-16 .form-check-input:checked {
     width: 175px;
     height: 320px;
   }
+  .screenshots.style-4 {
+    height: 543px;
+  }
 
   .screenshots.style-4 .mob-hand {
-    bottom: 165px;
+    /* bottom: 165px; */
     height: 435px;
     -webkit-transform: translateX(-35%);
     -ms-transform: translateX(-35%);
