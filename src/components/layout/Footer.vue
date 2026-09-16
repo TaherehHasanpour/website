@@ -30,7 +30,7 @@
                 >
                   <div class="info-item">
                     <img
-                    style="color: white;"
+                      style="color: white"
                       width="20px"
                       height="20px"
                       src="/public/assets/img/icons/svg/location-dot.svg"
@@ -55,19 +55,40 @@
 
               <ul>
                 <li>
-                  <a href="https://simmab.ir/" target="_blank" rel="noopener noreferrer">
-                    سیــــماب
+                  <a
+                    href="https://simmab.ir/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="p-2"
+                  >
+                    <img
+                      width="60px"
+                      height="30px"
+                      src="/assets/img/logos/logo-simmab2.png"
+                      alt=""
+                    />
+                    <!-- سیــــماب -->
                   </a>
                 </li>
 
                 <li>
                   <a href="https://gashtab.ir/" target="_blank" rel="noopener noreferrer">
-                    گشتــــاب
+                    <img
+                      width="60px"
+                      height="25px"
+                      src="/assets/img/logos/logo-gashtab.png"
+                      alt=""
+                    />
+                    <!-- گشتــــاب -->
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" target="_blank" rel="noopener noreferrer"> آبـــان </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <img width="55px" height="30px" src="/assets/img/logos/logo-aban1.png" alt="" />
+
+                    <!-- آبـــان -->
+                  </a>
                 </li>
               </ul>
             </div>
@@ -245,7 +266,7 @@
 }
 
 .style-4 .footer-links li a:hover {
-  color: #01305a;
+  color: #d0e9ff;
   padding-right: 5px;
 }
 
