@@ -17,7 +17,7 @@
           <div class="col-lg-4 col-md-6">
             <div class="footer-company">
               <div class="logo mb-20">
-                <img src="/assets/img/logos/atey_logo.png" alt="" />
+                <img src="/assets/img/logos/atey_logo2.png" alt="" />
               </div>
 
               <h5>پایدار تجهیز آتی خراسان</h5>
@@ -30,6 +30,7 @@
                 >
                   <div class="info-item">
                     <img
+                    style="color: white;"
                       width="20px"
                       height="20px"
                       src="/public/assets/img/icons/svg/location-dot.svg"
@@ -107,14 +108,14 @@
 
               <!-- Social Media -->
               <div class="footer-social mt-25">
-                <a href="https://atey.ir" target="_blank" rel="noopener noreferrer" title="وب‌سایت">
+                <!-- <a href="https://atey.ir" target="_blank" rel="noopener noreferrer" title="وب‌سایت">
                   <img
                     width="20px"
                     height="20px"
                     src="/public/assets/img/icons/svg/internet-explorer.svg"
                     alt=""
                   />
-                </a>
+                </a> -->
 
                 <a href="#" target="_blank" rel="noopener noreferrer" title="تلگرام">
                   <img
@@ -134,7 +135,7 @@
                   <img
                     width="20px"
                     height="20px"
-                    src="/public/assets/img/icons/svg/instagram1.svg"
+                    src="/public/assets/img/icons/svg/instagram.svg"
                     alt=""
                   />
                 </a>
@@ -195,8 +196,8 @@
   font-size: 12px;
   padding: 4px 12px;
   border-radius: 20px;
-  background: rgba(0, 180, 216, 0.1);
-  color: #01305a;
+  background: #88999b6b;
+  color: #fff;
   margin-bottom: 15px;
 }
 
@@ -320,7 +321,7 @@
 }
 
 .style-4 .copywrite strong {
-  color: #01305a;
+  color: white;
 }
 /* Mobile */
 @media (max-width: 991.98px) {

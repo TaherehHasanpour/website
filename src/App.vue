@@ -252,13 +252,15 @@ onBeforeUnmount(() => {
                   <h2 class="mb-30">دربـــاره ما</h2>
                 </div>
                 <p class="text mb-40">
-                  شرکت پایدار تجهیز آتی خراسان در سال 1401 با هدف تولید سنسور ها، دیتالاگرها تجهیزات
-                  الکتورنیکی حوزه آب و هواشناسی، همچنین طراحی و توسعهه سامانه‌ها و نرم‌افزارهای این
-                  حوزه تاسیس گردید. این شرکت در سال 1402 در پردیس فناوری جامع پارک علم و فناوری
-                  خراسان مستقر و در سال 1403 با تکیه بر توان نیروهای نخبه خود موفق به اخذ مجوز
-                  دانش‌بنیانی از معاونت علمی ریاست جمهوری شد. محصولات این شرکت دارای تاییدیه
-                  بالاترین سطح آمادگی فناوری (TRL9) از سافا (سامانه ارزیابی فناوری ایران) می‌باشد.
+                  شرکت پایدار تجهیز آتی خراسان در سال 1401 با هدف تولید سنسور ها، دیتالاگرها و
+                  تجهیزات الکتورنیکی حوزه آب و هواشناسی، همچنین طراحی و توسعه سامانه‌ها و
+                  نرم‌افزارهای این حوزه تاسیس گردید. این شرکت در سال 1402 در پردیس فناوری جامع پارک
+                  علم و فناوری خراسان مستقر و در سال 1403 با تکیه بر توان نیروهای نخبه خود موفق به
+                  اخذ مجوز دانش‌بنیانی از معاونت علمی ریاست جمهوری شد. محصولات این شرکت دارای
+                  تاییدیه بالاترین سطح آمادگی فناوری (TRL9) از سافا (سامانه ارزیابی فناوری ایران)
+                  می‌باشد.
                 </p>
+                <h4 class="pb-3">حوزه فعالیت</h4>
                 <ul>
                   <li class="d-flex align-items-center mb-3">
                     <small
@@ -323,11 +325,11 @@ onBeforeUnmount(() => {
               <div class="info">
                 <div class="section-head style-4">
                   <!-- <small class="title_small">إدارة أفضل للملاحظات</small> -->
-                  <h2 class="mb-30">ویژگی های<span>مـــا</span></h2>
+                  <h2 class="mb-30">نــرم‌افزار و <span>اپـلیکیشن</span></h2>
                 </div>
                 <p class="text mb-40">
-                  طراحی و توسعه نرم‌افزار مدیریت اطلاعات و داده های منابع آب و سامانه مدیریت فرایند
-                  های سازمانی
+                  طراحی و توسعه نرم‌افزارهای مدیریت اطلاعات و داده‌های منابع آب و سامانه مدیریت
+                  فرایندهای سازمانی
                 </p>
                 <div class="faq style-3 style-4">
                   <div class="accordion d-flex flex-column gap-3" id="accordionExample">
@@ -540,6 +542,12 @@ onBeforeUnmount(() => {
               <a href="#" class="img d-block">
                 <img src="/assets/img/icons/abmantaghei.png" alt="" />
               </a>
+              <p class="client-name">مدیریت منابع آب ایران</p>
+            </div>
+            <div class="client-item">
+              <a href="#" class="img d-block">
+                <img src="/assets/img/icons/abmantaghei.png" alt="" />
+              </a>
               <p class="client-name">آب منطقه‌ای خراسان رضوی</p>
             </div>
 
@@ -556,13 +564,6 @@ onBeforeUnmount(() => {
               </a>
               <p class="client-name">آب منطقه‌ای اصفهان</p>
             </div>
-
-            <div class="client-item">
-              <a href="#" class="img d-block">
-                <img src="/assets/img/icons/abmantaghei.png" alt="" />
-              </a>
-              <p class="client-name">مدیریت منابع آب ایران</p>
-            </div>
           </div>
         </div>
       </div>
@@ -573,7 +574,7 @@ onBeforeUnmount(() => {
       <div class="container">
         <div class="section-head text-center style-4">
           <!-- <small class="title_small bg-white">نوتيرو - تطبيق مذكرة سهل الاستخدام</small> -->
-          <h2 class="mb-70">خدمات <span>ارئه</span>میدیم</h2>
+          <h2 class="mb-70">خدمات <span>مــا</span></h2>
         </div>
         <div class="content features-content">
           <div class="features-card">
@@ -764,7 +765,7 @@ onBeforeUnmount(() => {
       <div class="container">
         <div class="section-head text-center style-4">
           <!-- <small class="title_small">خطة الاسعار</small> -->
-          <h2 class="mb-30">تــاییدیه و افتخـــارات</h2>
+          <h2 class="mb-30">تــاییدیه و <span>افتخـــارات</span></h2>
         </div>
         <div class="content">
           <div class="row gx-0">
