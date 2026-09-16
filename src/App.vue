@@ -264,7 +264,12 @@ onBeforeUnmount(() => {
                     <small
                       class="icon-30 bg-gray rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-3"
                     >
-                      <i class="fas fa-tag"></i>
+                     <img
+                              width="20px"
+                              height="20px"
+                              src="/public/assets/img/icons/svg//check.svg"
+                              alt=""
+                            />
                     </small>
                     <h6 class="fw-bold">
                       طراحی و توسعه سامانه‌های نرم‌افزاری و تحت وب حوزه آب و هواشناسی
@@ -274,7 +279,12 @@ onBeforeUnmount(() => {
                     <small
                       class="icon-30 bg-gray rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-3"
                     >
-                      <i class="fas fa-sync"></i>
+                       <img
+                              width="20px"
+                              height="20px"
+                              src="/public/assets/img/icons/svg//check.svg"
+                              alt=""
+                            />
                     </small>
                     <h6 class="fw-bold">طراحی و توليد سنسورها و تجهيزات حوزه آب و هواشناسی</h6>
                   </li>
@@ -282,7 +292,12 @@ onBeforeUnmount(() => {
                     <small
                       class="icon-30 bg-gray rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-3"
                     >
-                      <i class="fas fa-text-width"></i>
+                      <img
+                              width="20px"
+                              height="20px"
+                              src="/public/assets/img/icons/svg//check.svg"
+                              alt=""
+                            />
                     </small>
                     <h6 class="fw-bold">هوش مصنوعی‌ و اينترنت اشياء</h6>
                   </li>
