@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import Footer from './components/layout/Footer.vue'
+import Preloader from './views/home/Preloader.vue'
 
 // اگر Swiper را npm نصب کرده‌ای:
 // import Swiper from 'swiper/bundle'
@@ -98,12 +99,7 @@ onBeforeUnmount(() => {
 
 <template>
   <!-- ====== لودر ====== -->
-  <div id="preloader">
-    <div id="loading-wrapper" class="show">
-      <div id="loading-text"><img src="/assets/img/logos/atey_logo.png" alt="" /></div>
-      <div id="loading-content"></div>
-    </div>
-  </div>
+<Preloader></Preloader>
 
   <div class="hero-wrapper style-4">
     <img src="/assets/img/gifs/22.gif" alt="" class="hero-gif" />
@@ -782,7 +778,12 @@ onBeforeUnmount(() => {
                       <div class="achievement-content">
                         <div class="achievement-title">
                           <small class="achievement-icon">
-                            <i class="fas fa-check"></i>
+                            <img
+                              width="20px"
+                              height="20px"
+                              src="/public/assets/img/icons/svg//check.svg"
+                              alt=""
+                            />
                           </small>
 
                           <strong>مجوز دانش‌بنیان</strong>
@@ -806,7 +807,12 @@ onBeforeUnmount(() => {
                       <div class="achievement-content">
                         <div class="achievement-title">
                           <small class="achievement-icon">
-                            <i class="fas fa-check"></i>
+                            <img
+                              width="20px"
+                              height="20px"
+                              src="/public/assets/img/icons/svg//check.svg"
+                              alt=""
+                            />
                           </small>
 
                           <strong>تأییدیه TRL9</strong>
@@ -830,7 +836,12 @@ onBeforeUnmount(() => {
                       <div class="achievement-content">
                         <div class="achievement-title">
                           <small class="achievement-icon">
-                            <i class="fas fa-clock"></i>
+                            <img
+                              width="20px"
+                              height="20px"
+                              src="/public/assets/img/icons/svg/check.svg"
+                              alt=""
+                            />
                           </small>
 
                           <strong>مجوز افتا</strong>
@@ -873,7 +884,12 @@ onBeforeUnmount(() => {
                       <div class="achievement-content">
                         <div class="achievement-title">
                           <small class="achievement-icon">
-                            <i class="fas fa-award"></i>
+                            <img
+                              width="20px"
+                              height="20px"
+                              src="/public/assets/img/icons/svg//check.svg"
+                              alt=""
+                            />
                           </small>
 
                           <strong>نشان مردمی استقلال</strong>
@@ -897,7 +913,12 @@ onBeforeUnmount(() => {
                       <div class="achievement-content">
                         <div class="achievement-title">
                           <small class="achievement-icon">
-                            <i class="fas fa-trophy"></i>
+                            <img
+                              width="20px"
+                              height="20px"
+                              src="/public/assets/img/icons/svg//check.svg"
+                              alt=""
+                            />
                           </small>
 
                           <strong>رویداد ملی فن‌آب</strong>
@@ -921,7 +942,12 @@ onBeforeUnmount(() => {
                       <div class="achievement-content">
                         <div class="achievement-title">
                           <small class="achievement-icon">
-                            <i class="fas fa-certificate"></i>
+                            <img
+                              width="20px"
+                              height="20px"
+                              src="/public/assets/img/icons/svg//check.svg"
+                              alt=""
+                            />
                           </small>
 
                           <strong>گواهی ثبت اختراع</strong>
@@ -1428,7 +1454,7 @@ onBeforeUnmount(() => {
   height: 25px;
   min-width: 25px;
   border-radius: 50%;
-  background: #01305a;
+  background: #e4f2ff;
   color: #fff;
 
   display: inline-flex;

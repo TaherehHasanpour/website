@@ -25,20 +25,24 @@
               <div class="company-badge">دانش‌بنیان - فناور</div>
 
               <div class="company-info mt-20">
-                <div class="info-item">
-                  <img
-                    width="20px"
-                    height="20px"
-                    src="/public/assets/img/icons/svg/location-dot.svg"
-                    alt=""
-                  />
-                  <span>مشهد، پارک علم و فناوری خراسان</span>
-                </div>
+                <a
+                  href="https://neshan.org/maps/places/8b9f4f2ed36ce6385341c98f0e517f37#c36.443-59.426-19z-0p"
+                >
+                  <div class="info-item">
+                    <img
+                      width="20px"
+                      height="20px"
+                      src="/public/assets/img/icons/svg/location-dot.svg"
+                      alt=""
+                    />
+                    <span>مشهد، پارک علم و فناوری خراسان</span>
+                  </div>
 
-                <div class="info-item">
-                  <i class="icofont-building"></i>
-                  <span>ساختمان دانش‌بنیان، واحد 415</span>
-                </div>
+                  <div class="info-item">
+                    <i class="icofont-building"></i>
+                    <span>ساختمان دانش‌بنیان، واحد 415</span>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -130,16 +134,21 @@
                   <img
                     width="20px"
                     height="20px"
-                    src="/public/assets/img/icons/svg/instagram.svg"
+                    src="/public/assets/img/icons/svg/instagram1.svg"
                     alt=""
                   />
                 </a>
 
-                <a href="tel:05135419795" title="توییتر">
+                <a href="#" title="توییتر">
                   <img width="20px" height="20px" src="/public/assets/img/icons/svg/x.svg" alt="" />
                 </a>
                 <a href="tel:05135419795" title="لینکدین">
-                  <img width="20px" height="20px" src="/public/assets/img/icons/svg/x.svg" alt="" />
+                  <img
+                    width="20px"
+                    height="20px"
+                    src="/public/assets/img/icons/svg/linkedin.svg"
+                    alt=""
+                  />
                 </a>
               </div>
             </div>
