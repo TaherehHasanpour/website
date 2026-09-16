@@ -142,7 +142,10 @@
                 <a href="#" title="توییتر">
                   <img width="20px" height="20px" src="/public/assets/img/icons/svg/x.svg" alt="" />
                 </a>
-                <a href="tel:05135419795" title="لینکدین">
+                <a
+                  href="https://www.linkedin.com/company/pidar-tjhiz-atey-khorasan/about/?viewAsMember=true"
+                  title="لینکدین"
+                >
                   <img
                     width="20px"
                     height="20px"

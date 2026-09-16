@@ -21089,8 +21089,8 @@ footer.style-16 .form-check-input:checked {
 @media screen and (max-width: 480px) {
   .screenshots.style-4 .screenshots-slider .img {
     margin: 0 auto;
-    width: 150px;
-    height: 300px;
+    width: 175px;
+    height: 320px;
   }
 
   .screenshots.style-4 .mob-hand {
