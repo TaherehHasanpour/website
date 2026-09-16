@@ -99,7 +99,7 @@ onBeforeUnmount(() => {
 
 <template>
   <!-- ====== لودر ====== -->
-<Preloader></Preloader>
+  <Preloader></Preloader>
 
   <div class="hero-wrapper style-4">
     <img src="/assets/img/gifs/22.gif" alt="" class="hero-gif" />
@@ -264,12 +264,12 @@ onBeforeUnmount(() => {
                     <small
                       class="icon-30 bg-gray rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-3"
                     >
-                     <img
-                              width="20px"
-                              height="20px"
-                              src="/public/assets/img/icons/svg//check.svg"
-                              alt=""
-                            />
+                      <img
+                        width="20px"
+                        height="20px"
+                        src="/public/assets/img/icons/svg//check.svg"
+                        alt=""
+                      />
                     </small>
                     <h6 class="fw-bold">
                       طراحی و توسعه سامانه‌های نرم‌افزاری و تحت وب حوزه آب و هواشناسی
@@ -279,12 +279,12 @@ onBeforeUnmount(() => {
                     <small
                       class="icon-30 bg-gray rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-3"
                     >
-                       <img
-                              width="20px"
-                              height="20px"
-                              src="/public/assets/img/icons/svg//check.svg"
-                              alt=""
-                            />
+                      <img
+                        width="20px"
+                        height="20px"
+                        src="/public/assets/img/icons/svg//check.svg"
+                        alt=""
+                      />
                     </small>
                     <h6 class="fw-bold">طراحی و توليد سنسورها و تجهيزات حوزه آب و هواشناسی</h6>
                   </li>
@@ -293,11 +293,11 @@ onBeforeUnmount(() => {
                       class="icon-30 bg-gray rounded-circle color-blue4 d-inline-flex align-items-center justify-content-center me-3"
                     >
                       <img
-                              width="20px"
-                              height="20px"
-                              src="/public/assets/img/icons/svg//check.svg"
-                              alt=""
-                            />
+                        width="20px"
+                        height="20px"
+                        src="/public/assets/img/icons/svg//check.svg"
+                        alt=""
+                      />
                     </small>
                     <h6 class="fw-bold">هوش مصنوعی‌ و اينترنت اشياء</h6>
                   </li>
